@@ -1,0 +1,53 @@
+.App {
+  /* text-align: center; */
+}
+
+.Home {
+  margin-top: 5vw;
+}
+
+.discography-track-cover {
+  width: 270px;
+  height: 270px;
+}
+
+.discography-streaming {
+  
+}
+
+.panel-heading {
+  
+}
+
+#discography-glyphicon {
+  float: left;
+}
+
+.header-title {
+  text-decoration: none;
+  color: black;
+}
+
+.header-title:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.Track {
+  margin-top: 5vw;
+}
+
+#yolo {
+  float: right;
+}
+
+.discography-date {
+  /* float: right; */
+  font-size: 13px;
+}
+
+@media screen and (max-width: 340px) {
+  .discography-date {
+    font-size: 12px;
+  }
+}
