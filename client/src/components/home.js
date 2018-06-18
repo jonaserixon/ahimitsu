@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import reminisce from '../pics/reminisce.jpg';
 import ahimitsu from '../pics/ahimitsu.jpg';
 import twoplaces from '../pics/two.jpg';
+import inmyhead from '../pics/inmyhead.jpg';
 
 class Home extends Component {
     render() {
@@ -23,21 +24,22 @@ class Home extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
+                        <a name="home" href="/tracks/I Should Let You Go">
+                            <img width={1300} height={600} alt="1300x600" src={inmyhead} />
+                        </a>
+                        <Carousel.Caption>
+                        <h1>This is all in my head EP</h1>
+                        <p>3-track EP available on all common music stores</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
                         <a name="home" href="/tracks/Two Places">
                             <img width={1300} height={600} alt="1300x600" src={twoplaces} />
                         </a>
                         <Carousel.Caption>
                         <h1>Two Places</h1>
                         <p>Available on all music platforms</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <a name="home" href="/tracks/Reminisce">
-                            <img width={1300} height={600} alt="1300x600" src={reminisce} />
-                        </a>
-                        <Carousel.Caption>
-                        <h1>Reminisce EP</h1>
-                        <p>3-track EP available on all common music stores</p>
+
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
