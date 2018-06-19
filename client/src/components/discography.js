@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-import {Button, Panel, PanelGroup, Glyphicon, Image, PageHeader, Badge, Grid, Row, Col} from 'react-bootstrap';
+import {Button, Panel, PanelGroup, Glyphicon, Image, PageHeader, Badge, Grid, Row, Col, Modal} from 'react-bootstrap';
 import styled from 'styled-components';
 
 import {information as TrackList} from './trackinformation';
+
+import StreamModal from './streamModal';
 
 const StyledPanelGroup = styled(PanelGroup)`
   margin: 0 auto
@@ -13,11 +15,8 @@ const StyledPanelGroup = styled(PanelGroup)`
 class Discography extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
     }
-    
+
     render() {
         let discography = [];
         for (let i in TrackList) {
@@ -46,12 +45,15 @@ class Discography extends Component {
                                     <Glyphicon glyph="glyphicon glyphicon-play" />
                                     Stream
                                 </a>
-                                <div><a href={TrackList[i].soundcloud}>SoundCloud</a></div>
-                                <div><a href={TrackList[i].itunes}>Apple Music</a></div>
-                                <div><a href={TrackList[i].spotify}>Spotify</a></div>
-                                <div><a href={TrackList[i].youtube}>YouTube</a></div>
-                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
+
+                                <div><a href={this.props.soundcloud}>SoundCloud</a></div>
+                                <div><a href={this.props.itunes}>Apple Music</a></div>
+                                <div><a href={this.props.spotify}>Spotify</a></div>
+                                <div><a href={this.props.youtube}>YouTube</a></div>
+                                <div><a href={this.props.bandcamp}>Bandcamp</a></div>
                             </div>
+
+                            
                         </Col>
 
                         <Col xs={2}>

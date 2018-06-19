@@ -18,8 +18,8 @@ class Home extends Component {
                             <img width={1300} height={600} alt="1300x600" src={ahimitsu} />
                         </a>
                         <Carousel.Caption>
-                        <h1>A Himitsu</h1>
-                        <p>Official website</p>
+                            <h1>A Himitsu</h1>
+                            <p>Official website</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -27,8 +27,8 @@ class Home extends Component {
                             <img width={1300} height={600} alt="1300x600" src={inmyhead} />
                         </a>
                         <Carousel.Caption>
-                        <h1>This is all in my head 『EP』</h1>
-                        <p>3-track EP available on all common music stores</p>
+                            <h1>This is all in my head 『EP』</h1>
+                            <p>3-track EP available on all common music stores</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -36,9 +36,8 @@ class Home extends Component {
                             <img width={1300} height={600} alt="1300x600" src={twoplaces} />
                         </a>
                         <Carousel.Caption>
-                        <h1>Two Places</h1>
-                        <p>Available on all music platforms</p>
-                        
+                            <h1>Two Places</h1>
+                            <p>Available on all music platforms</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -46,16 +45,23 @@ class Home extends Component {
                 </br>
 
                 <a className="header-title" name="home">
-                <PageHeader>
-                    A Himitsu  
-                    <small> Official Website</small>
-                </PageHeader>
+                    <PageHeader>
+                        A Himitsu  
+                        <small> Official Website</small>
+                    </PageHeader>
                 </a>
-                <p>
-                    I made this website in order to collect all the various links for streaming, 
-                    downloading, buying and supporting in one place. It gets so spread out and 
-                    confusing when you need to navigate to every single social media in order to access everything.
-                </p>
+
+                <Grid>
+                    <Row>
+                        <Col xs={12}>
+                            <p>
+                                I made this website in order to collect all the various links for streaming, 
+                                downloading, buying and supporting in one place. It gets so spread out and 
+                                confusing when you need to navigate to every single social media in order to access everything.
+                            </p>
+                        </Col>
+                    </Row>
+                </Grid>
 
                 <br>
                 </br>
