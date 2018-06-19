@@ -11,12 +11,8 @@
   height: 270px;
 }
 
-.discography-streaming {
-  
-}
-
-.panel-heading {
-  
+h1 {
+  text-align: center;
 }
 
 #discography-glyphicon {

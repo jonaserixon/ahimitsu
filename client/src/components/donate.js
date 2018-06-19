@@ -11,12 +11,18 @@ class Donate extends Component {
         return (
             <div className="Donate">
             
-                <a className="header-title" name="donate">
-                    <PageHeader>
-                        Donate
-                        <small> Support me</small>  
-                    </PageHeader>
-                </a>   
+                <Grid>
+                    <Row>
+                        <Col>
+                            <a className="header-title" name="donate">
+                                <PageHeader>
+                                    Donate
+                                    {/* <small> Support me</small>   */}
+                                </PageHeader>
+                            </a>
+                        </Col>
+                    </Row>
+                </Grid>
 
                 <Grid>
             

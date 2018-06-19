@@ -43,13 +43,18 @@ class Home extends Component {
                 </Carousel>
                 <br>
                 </br>
-
-                <a className="header-title" name="home">
-                    <PageHeader>
-                        A Himitsu  
-                        <small> Official Website</small>
-                    </PageHeader>
-                </a>
+                <Grid>
+                    <Row>
+                        <Col>
+                            <a className="header-title" name="home">
+                                <PageHeader>
+                                    A Himitsu  
+                                    {/* <small> Official Website</small> */}
+                                </PageHeader>
+                            </a>
+                        </Col>
+                    </Row>
+                </Grid>
 
                 <Grid>
                     <Row>

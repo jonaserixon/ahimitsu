@@ -87,12 +87,19 @@ class Discography extends Component {
 
         return (
             <div className="Discography">
-                <a className="header-title" name="discography">
-                <PageHeader>
-                    Discography  
-                    <small> Collection of previously released tracks with download and streaming links</small>
-                </PageHeader>
-                </a>
+                <Grid>
+                    <Row>
+                        <Col>
+                            <a className="header-title" name="discography">
+                            <PageHeader>
+                                Discography  
+                                {/* <small> Collection of previously released tracks with download and streaming links</small> */}
+                            </PageHeader>
+                            </a>
+                        </Col>
+                    </Row>
+                </Grid>
+
                 <StyledPanelGroup accordion id="accordion-example">
                     {discography}
                 </StyledPanelGroup>

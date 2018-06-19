@@ -11,11 +11,17 @@ class About extends Component {
         return (
             <div className="About">
             
-                <a className="header-title" name="about">
-                    <PageHeader>
-                        About me  
-                    </PageHeader>
-                </a>   
+                <Grid>
+                    <Row>
+                        <Col>
+                            <a className="header-title" name="about">
+                                <PageHeader>
+                                    About me  
+                                </PageHeader>
+                            </a>
+                        </Col>
+                    </Row>
+                </Grid>
 
                 <Grid>
             

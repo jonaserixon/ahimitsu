@@ -7,12 +7,18 @@ class Contact extends Component {
     render() {
         return (
             <div className="Contact">
-                <a className="header-title" name="contact">
-                    <PageHeader>
-                        Contact  
-                        <small> Regarding my music</small>
-                    </PageHeader>
-                </a>  
+                <Grid>
+                    <Row>
+                        <Col>
+                            <a className="header-title" name="contact">
+                                <PageHeader>
+                                    Contact  
+                                    {/* <small> Regarding my music</small> */}
+                                </PageHeader>
+                            </a>
+                        </Col>
+                    </Row>
+                </Grid>
             <Grid>
                 <Row>
                     <Col xs={12}>
