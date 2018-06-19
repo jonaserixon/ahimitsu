@@ -6,13 +6,29 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 class Navigation extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            fixedTop: true
+        }
+    }
+
+    componentWillMount() {
+        if (window.innerWidth < 400) {
+            this.setState({fixedTop: false});
+            return;
+        } 
+        this.setState({fixedTop: true});
+    }
+
     render() {
         return (
             <div className="Navigation">
-                <Navbar fixedTop >
+                <Navbar fixedTop={this.state.fixedTop} >
                     <Navbar.Header>
                         <Navbar.Brand>
-                        <a href="/#home">A Himitsu</a>
+                            <a href="/#home">A Himitsu</a>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav>
@@ -23,19 +39,19 @@ class Navigation extends Component {
                             About
                         </NavItem>
                         <NavItem eventKey={2} href="/#contact">
-                         Contact
+                            Contact
                         </NavItem>
                         <NavDropdown eventKey={3} title="Social media" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1} href="#">Facebook</MenuItem>
-                        <MenuItem eventKey={3.2} href="#">Instagram</MenuItem>
-                        <MenuItem eventKey={3.3} href="#">Twitter</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey={3.4}>Email subscription</MenuItem>
+                            <MenuItem eventKey={3.1} href="https://www.facebook.com/ahimitsu">Facebook</MenuItem>
+                            <MenuItem eventKey={3.2} href="https://www.instagram.com/a_himitsu/">Instagram</MenuItem>
+                            <MenuItem eventKey={3.3} href="https://twitter.com/ahimitsu1">Twitter</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={3.4}>x.jonaz@gmail.com</MenuItem>
                         </NavDropdown>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem eventKey={1} href="https://www.paypal.me/ahimitsu">
-                        Donate/Support
+                        <NavItem eventKey={1} href="#donate">
+                            Donate
                         </NavItem>
                     </Nav>
                 </Navbar>

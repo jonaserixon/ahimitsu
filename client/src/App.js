@@ -3,9 +3,6 @@ import './App.css';
 
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
-import Home from './components/home';
-import Discography from './components/discography';
-import Contact from './components/contact';
 import Navigation from './components/navigation';
 import Track from './components/track';
 import Footer from './components/footer';

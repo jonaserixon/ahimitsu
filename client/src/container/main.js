@@ -4,6 +4,7 @@ import Home from '../components/home';
 import Discography from '../components/discography';
 import About from '../components/about';
 import Contact from '../components/contact';
+import Donate from '../components/donate';
 
 class Container extends Component {
     render() {
@@ -13,6 +14,7 @@ class Container extends Component {
                 <Discography />
                 <About />
                 <Contact />
+                <Donate />
             </div>
         );
     }

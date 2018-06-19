@@ -46,6 +46,10 @@
   font-size: 13px;
 }
 
+@media (max-width: 768px) {
+  html a { font-size: 12px; }
+}
+
 @media screen and (max-width: 340px) {
   .discography-date {
     font-size: 12px;

@@ -12,7 +12,6 @@ class Home extends Component {
     render() {
         return (
             <div className="Home">
-
                 <Carousel>
                     <Carousel.Item>
                         <a name="home" href="/">
@@ -28,7 +27,7 @@ class Home extends Component {
                             <img width={1300} height={600} alt="1300x600" src={inmyhead} />
                         </a>
                         <Carousel.Caption>
-                        <h1>This is all in my head EP</h1>
+                        <h1>This is all in my head 『EP』</h1>
                         <p>3-track EP available on all common music stores</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -39,7 +38,7 @@ class Home extends Component {
                         <Carousel.Caption>
                         <h1>Two Places</h1>
                         <p>Available on all music platforms</p>
-
+                        
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -60,7 +59,6 @@ class Home extends Component {
 
                 <br>
                 </br>
-                
             </div>
         );
     }
