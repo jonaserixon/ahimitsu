@@ -44,10 +44,13 @@ h1 {
 
 @media (max-width: 768px) {
   html a { font-size: 12px; }
+  .discography-links { display: none; }
 }
 
 @media screen and (max-width: 340px) {
   .discography-date {
     font-size: 12px;
   }
+
+
 }

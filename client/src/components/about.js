@@ -27,7 +27,7 @@ class About extends Component {
             
                 <Row>
                     <Col xs={6}>
-                        <Image width={"500px"} src={studioSetup} alt={"My bedroom studio"} responsive />
+                        <Image rounded width={"500px"} src={studioSetup} alt={"My bedroom studio"} responsive />
                     </Col>
                     <Col xs={6}>
                         <p>

@@ -34,23 +34,28 @@ class Discography extends Component {
                     <Panel.Body collapsible>
 
                     <Row>
-                        <Col xs={4}>
-                            <Image rounded height={"300px"} src={TrackList[i].image} responsive />
+                        <Col xs={2}>
+                            <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded responsive />
+                        </Col>
+
+                        <Col xs={2}>
+                            <div>{TrackList[i].info}</div>
                         </Col>
 
 
                         <Col xs={2}>
-                            <div className="discography-streaming">
-                                <a href={"#"}>
-                                    <Glyphicon glyph="glyphicon glyphicon-play" />
+                            <div>
+                                <a href="#"><Glyphicon glyph="glyphicon glyphicon-play" /></a>
+
+                                <a className="discography-links" href={"#"}>
                                     Stream
                                 </a>
 
-                                <div><a href={this.props.soundcloud}>SoundCloud</a></div>
-                                <div><a href={this.props.itunes}>Apple Music</a></div>
-                                <div><a href={this.props.spotify}>Spotify</a></div>
-                                <div><a href={this.props.youtube}>YouTube</a></div>
-                                <div><a href={this.props.bandcamp}>Bandcamp</a></div>
+                                <div><a href={TrackList[i].soundcloud}>SoundCloud</a></div>
+                                <div><a href={TrackList[i].itunes}>Apple Music</a></div>
+                                <div><a href={TrackList[i].spotify}>Spotify</a></div>
+                                <div><a href={TrackList[i].youtube}>YouTube</a></div>
+                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
                             </div>
 
                             
@@ -58,8 +63,9 @@ class Discography extends Component {
 
                         <Col xs={2}>
                             <div>
-                                <a href={TrackList[i].google_drive}>
-                                    <Glyphicon glyph="glyphicon glyphicon-download-alt" />
+                                <a href="#"><Glyphicon glyph="glyphicon glyphicon-download-alt" /></a>
+
+                                <a className="discography-links" href={TrackList[i].google_drive}>
                                     Download
                                 </a>
                             </div>
@@ -67,17 +73,16 @@ class Discography extends Component {
 
                         <Col xs={2}>
                             <div>
-                                <a href={TrackList[i].buy}>
-                                    <Glyphicon glyph="glyphicon glyphicon-credit-card" />
+                            <a href="#"> <Glyphicon glyph="glyphicon glyphicon-credit-card" /> </a>
+
+                                <a className="discography-links" href={TrackList[i].buy}>
                                     Buy
                                 </a>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>
-                            <div>{TrackList[i].info}</div>
-                        </Col>
+                        
                     </Row>
                     </Panel.Body>
                 </Panel>
