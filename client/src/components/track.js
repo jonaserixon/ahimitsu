@@ -9,20 +9,30 @@ class Track extends Component {
     }
 
     componentDidMount() {
-        window.history.replaceState(null, null, window.location.pathname);
+        // window.history.replaceState(null, null, window.location.pathname);
 
     }
     
     render() {
 
         let track;
+        let lyrics;
 
         for (let key in TrackList) {
             if (TrackList[key].title === this.props.match.params.id) {
                 track = TrackList[key];
 
                 if (TrackList[key].lyrics) {
-                    
+                    lyrics = 
+                    <Col xs={3}>
+                        <div>
+                            <h3 className="discography-sub-header">
+                            <Glyphicon glyph="glyphicon glyphicon-music" />
+                                Lyrics
+                            </h3>
+                            <div><a href={track.lyrics}>Lyrics document</a></div>
+                        </div>
+                    </Col>
                 }
             }
         }
@@ -91,17 +101,7 @@ class Track extends Component {
                                 <div><a href={track.bandcamp}>Bandcamp</a></div>
                             </div>
                         </Col>
-                        <Col xs={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                <Glyphicon glyph="glyphicon glyphicon-music" />
-                                    Lyrics
-                                </h3>
-
-                                <div><a href={track.lyrics}>Lyrics document</a></div>
-
-                            </div>
-                        </Col>
+                        {lyrics}
                     </Row>
                     <br/>
                     <Row>

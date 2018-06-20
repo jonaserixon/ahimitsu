@@ -11,6 +11,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/i-should-let-you-go-feat-nori',
         youtube: 'https://www.youtube.com/watch?v=Xzq3z9tFkbk',
         itunes: 'https://itunes.apple.com/us/album/this-is-all-in-my-head-single/1394410727',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_This_Is_All_in_My_Head?id=Bvxfua6afpxbmi5oi3i6yl7esfu',
         buy: 'https://ahimitsu.bandcamp.com/track/i-should-let-you-go-feat-nori',
         lyrics: 'https://docs.google.com/document/d/1nRFxp-NaIcIFXbQG1AflzjeTyAPK8d5Xbbvx3LqRzZM/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/454502682&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -27,6 +28,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/dont-cry-feat-nori',
         youtube: 'https://www.youtube.com/watch?v=KCwA65MuVko',
         itunes: 'https://itunes.apple.com/us/album/this-is-all-in-my-head-single/1394410727',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_This_Is_All_in_My_Head?id=Bvxfua6afpxbmi5oi3i6yl7esfu',
         buy: 'https://ahimitsu.bandcamp.com/track/dont-cry-feat-nori',
         lyrics: 'https://docs.google.com/document/d/1QfNLeMEaqi8pNP64MH4a3_2CY4gU4XzF-lcpp7DEQ3Q/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/454504344&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -43,6 +45,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/fragile',
         youtube: 'https://www.youtube.com/watch?v=CHJJRdrFw5s',
         itunes: 'https://itunes.apple.com/us/album/this-is-all-in-my-head-single/1394410727',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_This_Is_All_in_My_Head?id=Bvxfua6afpxbmi5oi3i6yl7esfu',
         buy: 'https://ahimitsu.bandcamp.com/track/fragile',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/454504929&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -58,6 +61,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/two-places',
         youtube: 'https://www.youtube.com/watch?v=lK6QXbYKzhA',
         itunes: 'https://itunes.apple.com/us/album/two-places-single/id1282092743',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Two_Places?id=Biom3fuq6jzgn3ocvqxjupwahta',
         buy: 'https://ahimitsu.bandcamp.com/track/two-places',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342184645&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -73,6 +77,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/cosmic-storm',
         youtube: 'https://www.youtube.com/watch?v=C8fkSFIf3hY',
         itunes: 'https://itunes.apple.com/us/album/cosmic-storm-single/id1243836626',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Cosmic_Storm?id=Brvb4rsyydb54oi2sovostjigki',
         buy: 'https://ahimitsu.bandcamp.com/track/cosmic-storm',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325882774&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -88,6 +93,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/realms',
         youtube: 'https://www.youtube.com/watch?v=Nv5YxKqQ65A',
         itunes: 'https://itunes.apple.com/us/album/realms-single/1207587842',
+        google_play: 'https://play.google.com/store/music/album/Hinkik_Realms?id=B5w5764deeecbj2h3tpqt7usqj4',
         buy: 'https://ahimitsu.bandcamp.com/track/realms',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308484458&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -103,6 +109,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/in-love-feat-nori',
         youtube: 'https://www.youtube.com/watch?v=rXb7Dkut4BE',
         itunes: 'https://itunes.apple.com/us/album/in-love-feat.-nori-single/id1166298332',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_In_Love_feat_Nori?id=Bd5nuhmkdza6vaurldrvicnnij4',
         buy: 'https://ahimitsu.bandcamp.com/track/in-love-feat-nori',
         lyrics: 'https://docs.google.com/document/d/1ODj_ejiFLoYwhNLfInWERLOP5yWeSC55NeZKXqfuzhA/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289581187&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -119,6 +126,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/astray-feat-madi-larson',
         youtube: 'https://www.youtube.com/watch?v=EBOzlJdlbyU',
         itunes: 'https://itunes.apple.com/us/album/astray-feat.-madi-larson-single/id1148337018',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Astray_feat_Madi_Larson?id=B7dlhqok7ifzzihot6etpncfcgu',
         buy: 'https://ahimitsu.bandcamp.com/track/astray-feat-madi-larson',
         lyrics: 'https://docs.google.com/document/d/1LqvFcVcZ07JrUCOsnPf_gEGFcgKfoavB4eq8o9clRJo/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/280458454&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -135,6 +143,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/reminisce',
         youtube: 'https://www.youtube.com/watch?v=FbhzEWOuQbA',
         itunes: 'https://itunes.apple.com/us/album/reminisce-single/id1128913329',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Reminisce?id=Bmoe7uelg5gw5fw2nxx7jcdjbsa',
         buy: 'https://ahimitsu.bandcamp.com/track/reminisce',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271721656&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -150,6 +159,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/jorg',
         youtube: 'https://www.youtube.com/watch?v=U7oEZRwmm6E',
         itunes: 'https://itunes.apple.com/us/album/reminisce-single/id1128913329',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Reminisce?id=Bmoe7uelg5gw5fw2nxx7jcdjbsa',
         buy: 'https://ahimitsu.bandcamp.com/track/jorg',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271720602&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -165,6 +175,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/waiting-just-on-you-feat-nori',
         youtube: 'https://www.youtube.com/watch?v=QfDXiG9Q1GQ',
         itunes: 'https://itunes.apple.com/us/album/waiting-just-on-you-feat./id1097425378',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Waiting_Just_on_You_feat_Nori?id=B4ioziscx3jg7iaquixclzclx5u',
         buy: 'https://ahimitsu.bandcamp.com/track/waiting-just-on-you-feat-nori',
         lyrics: 'https://docs.google.com/document/d/13ZtrVfRVP-vQVZLLMy4sqo2w4aDphp7zh97guCzkIig/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257603086&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -181,6 +192,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/stories',
         youtube: 'https://www.youtube.com/watch?v=xqTG3wDLtUY',
         itunes: 'https://itunes.apple.com/us/album/stories-single/id1065724001',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Stories?id=Bfb6vy6tqxxupsgqmniuoptzm6u',
         buy: 'https://ahimitsu.bandcamp.com/track/stories',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236802055&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -196,6 +208,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/flourish-wither-bye',
         youtube: 'https://www.youtube.com/watch?v=_2-BCUCTfhc',
         itunes: 'https://itunes.apple.com/us/album/flourish-wither-bye-single/id1051192484',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Flourish_Wither_Bye?id=Bljsu6vempgs46e5v5pw6qnaag4',
         buy: 'https://ahimitsu.bandcamp.com/track/flourish-wither-bye',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227907037&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -211,6 +224,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/she-closed-her-eyes-in-despair',
         youtube: 'https://www.youtube.com/watch?v=8z6ES0M8bN0',
         itunes: 'https://itunes.apple.com/us/album/reminisce-single/id1128913329',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Reminisce?id=Bmoe7uelg5gw5fw2nxx7jcdjbsa',
         buy: 'https://ahimitsu.bandcamp.com/track/she-closed-her-eyes-in-despair',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223831826&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -226,6 +240,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/easier-to-fade-feat-madi-larson',
         youtube: 'https://www.youtube.com/watch?v=zC-t6NehXSA',
         itunes: 'https://itunes.apple.com/us/album/easier-to-fade-feat.-madi/id1037568806',
+        google_play: 'https://play.google.com/store/music/album?id=Bnfogx4z7oazz5zuty6d4duusva&tid=song-T6uot3skyhkf2k34xf7y3bb4wbe',
         buy: 'https://ahimitsu.bandcamp.com/track/easier-to-fade-feat-madi-larson',
         lyrics: 'https://docs.google.com/document/d/13vfdbGVbfW-SjjfHXsbwsBiOxvkoZ_KnsRsPR40sYxI/edit?usp=sharing',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223062346&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
@@ -242,6 +257,7 @@ let information = {
         bandcamp: null,
         youtube: 'https://www.youtube.com/watch?v=ruE25BCgcYk',
         itunes: 'https://itunes.apple.com/us/album/adventures-single/997747952',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Adventures?id=Bwstffbyaqnr65esijod63xtlse',
         buy: 'https://itunes.apple.com/us/album/adventures-single/997747952',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209871375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -257,6 +273,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/cease',
         youtube: 'https://www.youtube.com/watch?v=MBzzGKsmnSw',
         itunes: 'https://itunes.apple.com/us/album/a-himitsu-ep/id999863849',
+        google_play: 'https://play.google.com/store/music/album?id=B3fjhhmzkisscfstou6rfnpujji&tid=song-Tridfkxv6j746smhuq3b4uutnhe',
         buy: 'https://ahimitsu.bandcamp.com/track/cease',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201541435&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -272,6 +289,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/lost-within',
         youtube: 'https://www.youtube.com/watch?v=6WQjgHuUDWU',
         itunes: 'https://itunes.apple.com/us/album/a-himitsu-ep/id999863849',
+        google_play: 'https://play.google.com/store/music/album?id=B3fjhhmzkisscfstou6rfnpujji&tid=song-Tzo2lau7ixiuv6hesyci2ipzina',
         buy: 'https://ahimitsu.bandcamp.com/track/lost-within',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/183615430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -287,6 +305,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/icy-vindur',
         youtube: 'https://www.youtube.com/watch?v=w2Y2P4ksQK8',
         itunes: 'https://itunes.apple.com/us/album/a-himitsu-ep/id999863849',
+        google_play: 'https://play.google.com/store/music/album?id=B3fjhhmzkisscfstou6rfnpujji&tid=song-Tlkb3gq6ir4a4inm42t7t3okipe',
         buy: 'https://ahimitsu.bandcamp.com/track/icy-vindur',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/174998995&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -302,6 +321,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/isolated-mind',
         youtube: 'https://www.youtube.com/watch?v=r7109mnvIu8',
         itunes: 'https://itunes.apple.com/us/album/a-himitsu-ep/id999863849',
+        google_play: 'https://play.google.com/store/music/album?id=B3fjhhmzkisscfstou6rfnpujji&tid=song-Tftyy3vbchie5p6epvithnliu7q',
         buy: 'https://ahimitsu.bandcamp.com/track/isolated-mind',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171369630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -317,6 +337,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
         youtube: 'https://www.youtube.com/watch?v=Mf7rdM9ho7M',
         itunes: 'https://itunes.apple.com/us/album/lucid-dream-single/id999823269',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Lucid_Dream?id=Bpjpnvvrlcty5udlhzjowleutwi',
         buy: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196156603&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
@@ -332,6 +353,7 @@ let information = {
         bandcamp: 'https://ahimitsu.bandcamp.com/track/where-silence-is-nonexistent',
         youtube: 'https://www.youtube.com/watch?v=m7eM8BXG3eg',
         itunes: null,
+        google_play: null,
         buy: 'https://ahimitsu.bandcamp.com/track/where-silence-is-nonexistent',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/167823205&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     }

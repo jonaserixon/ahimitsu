@@ -39,17 +39,11 @@ class Discography extends Component {
                         </Col>
 
                         <Col xs={2}>
-                            <div>{TrackList[i].info}</div>
-                        </Col>
-
-
-                        <Col xs={2}>
                             <div>
-                                <a href="#"><Glyphicon glyph="glyphicon glyphicon-play" /></a>
-
-                                <a className="discography-links" href={"#"}>
+                                <h3 className="discography-sub-header">
+                                    <Glyphicon glyph="glyphicon glyphicon-play" />
                                     Stream
-                                </a>
+                                </h3>
 
                                 <div><a href={TrackList[i].soundcloud}>SoundCloud</a></div>
                                 <div><a href={TrackList[i].itunes}>Apple Music</a></div>
@@ -57,31 +51,41 @@ class Discography extends Component {
                                 <div><a href={TrackList[i].youtube}>YouTube</a></div>
                                 <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
                             </div>
-
-                            
                         </Col>
 
                         <Col xs={2}>
                             <div>
-                                <a href="#"><Glyphicon glyph="glyphicon glyphicon-download-alt" /></a>
-
-                                <a className="discography-links" href={TrackList[i].google_drive}>
+                                <h3 className="discography-sub-header">
+                                    <Glyphicon glyph="glyphicon glyphicon-download-alt" />
                                     Download
-                                </a>
+                                </h3>
+
+                                <div><a href={TrackList[i].google_drive}>Google Drive</a></div>
+                                <div><a href={TrackList[i].download}>Stereload</a></div>
+                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
                             </div>
                         </Col>
 
                         <Col xs={2}>
                             <div>
-                            <a href="#"> <Glyphicon glyph="glyphicon glyphicon-credit-card" /> </a>
-                                <a className="discography-links" href={TrackList[i].buy}>
+                                <h3 className="discography-sub-header">
+                                    <Glyphicon glyph="glyphicon glyphicon-credit-card" />
                                     Buy
-                                </a>
+                                </h3>
+
+                                <div><a href={TrackList[i].itunes}>iTunes</a></div>
+                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
+                                <div><a href={TrackList[i].google_play}>Google Play</a></div>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <a href={"/tracks/" + TrackList[i].title}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" pullRight /></a>
+                        <Col xs={2}>
+                            <div>{TrackList[i].info}</div>
+                        </Col>
+                        <Col xs={10}>
+                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].title}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" /></a>
+                        </Col>
                     </Row>
                     </Panel.Body>
                 </Panel>

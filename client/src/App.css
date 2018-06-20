@@ -55,6 +55,11 @@ iframe {
   margin-right: 5px;
 }
 
+.fullscreen {
+  float: right; 
+  font-size: 3rem;
+}
+
 @media (max-width: 768px) {
   html a { font-size: 12px; }
   .discography-links { display: none; }
