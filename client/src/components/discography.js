@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
-import {Button, Panel, PanelGroup, Glyphicon, Image, PageHeader, Badge, Grid, Row, Col, Modal} from 'react-bootstrap';
+import {Panel, PanelGroup, Glyphicon, Image, PageHeader, Badge, Grid, Row, Col} from 'react-bootstrap';
 import styled from 'styled-components';
 
 import {information as TrackList} from './trackinformation';
-
-import StreamModal from './streamModal';
 
 const StyledPanelGroup = styled(PanelGroup)`
   margin: 0 auto
@@ -34,11 +32,12 @@ class Discography extends Component {
                     <Panel.Body collapsible>
 
                     <Row>
-                        <Col xs={2}>
+                    <div className="discography-row">
+                        <Col xs={3}>
                             <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded responsive />
                         </Col>
 
-                        <Col xs={2}>
+                        <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-play" />
@@ -53,7 +52,7 @@ class Discography extends Component {
                             </div>
                         </Col>
 
-                        <Col xs={2}>
+                        <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-download-alt" />
@@ -66,7 +65,7 @@ class Discography extends Component {
                             </div>
                         </Col>
 
-                        <Col xs={2}>
+                        <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-credit-card" />
@@ -78,10 +77,11 @@ class Discography extends Component {
                                 <div><a href={TrackList[i].google_play}>Google Play</a></div>
                             </div>
                         </Col>
+                    </div>
                     </Row>
                     <Row>
                         <Col xs={2}>
-                            <div>{TrackList[i].info}</div>
+                            <div className="discography-info">{TrackList[i].info}</div>
                         </Col>
                         <Col xs={10}>
                             <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].title}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" /></a>

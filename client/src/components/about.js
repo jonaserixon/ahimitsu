@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {Navbar, NavItem, NavDropdown, MenuItem, Nav, Jumbotron, Button, PageHeader, Image, Panel, Grid, Row, Col} from 'react-bootstrap';
-import styled from 'styled-components';
 
 import studioSetup from '../pics/studio.JPG';
 import ahimitsu1 from '../pics/ahimitsu1.jpg';

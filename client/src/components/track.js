@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Panel, PanelGroup, Glyphicon, Image, PageHeader, Badge, Grid, Row, Col, Modal, Breadcrumb} from 'react-bootstrap';
+import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb} from 'react-bootstrap';
 
 import {information as TrackList} from './trackinformation';
 
@@ -10,11 +10,9 @@ class Track extends Component {
 
     componentDidMount() {
         // window.history.replaceState(null, null, window.location.pathname);
-
     }
     
     render() {
-
         let track;
         let lyrics;
 
@@ -63,7 +61,7 @@ class Track extends Component {
                         <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
-                                <Glyphicon glyph="glyphicon glyphicon-play" />
+                                    <Glyphicon glyph="glyphicon glyphicon-play" />
                                     Stream
                                 </h3>
 
@@ -73,30 +71,24 @@ class Track extends Component {
                                 <div><a href={track.youtube}>YouTube</a></div>
                                 <div><a href={track.bandcamp}>Bandcamp</a></div>
                             </div>
-
-                            
                         </Col>
-
                         <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
-                                <Glyphicon glyph="glyphicon glyphicon-download-alt" />
+                                    <Glyphicon glyph="glyphicon glyphicon-download-alt" />
                                     Download
                                 </h3>
-
                                 <div><a href={track.google_drive}>Google Drive</a></div>
                                 <div><a href={track.download}>Stereload</a></div>
                                 <div><a href={track.bandcamp}>Bandcamp</a></div>
                             </div>
                         </Col>
-
                         <Col xs={3}>
                             <div>
                                 <h3 className="discography-sub-header">
-                                <Glyphicon glyph="glyphicon glyphicon-credit-card" />
+                                    <Glyphicon glyph="glyphicon glyphicon-credit-card" />
                                     Buy
                                 </h3>
-
                                 <div><a href={track.itunes}>iTunes</a></div>
                                 <div><a href={track.bandcamp}>Bandcamp</a></div>
                             </div>

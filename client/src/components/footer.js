@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav} from 'react-bootstrap';
-import styled from 'styled-components';
-
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import {Navbar, NavItem, Nav} from 'react-bootstrap';
 
 class Footer extends Component {
     render() {

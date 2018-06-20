@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav, Jumbotron, Button, Image, Grid, Row, Col, Carousel, Panel, Well, PageHeader} from 'react-bootstrap';
-import styled from 'styled-components';
+import {Grid, Row, Col, Carousel, PageHeader} from 'react-bootstrap';
 
-import reminisce from '../pics/reminisce.jpg';
 import ahimitsu from '../pics/ahimitsu.jpg';
 import twoplaces from '../pics/two.jpg';
 import inmyhead from '../pics/inmyhead.jpg';

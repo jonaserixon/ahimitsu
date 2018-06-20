@@ -2,6 +2,9 @@
   /* text-align: center; */
 }
 
+::selection { background:#ff42bd; color: black; }
+::-moz-selection { background:#ff42bd; color: black;}
+
 .Home {
   margin-top: 5vw;
 }
@@ -58,6 +61,7 @@ iframe {
 .fullscreen {
   float: right; 
   font-size: 3rem;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -65,9 +69,20 @@ iframe {
   .discography-links { display: none; }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   .discography-date {
     font-size: 12px;
+  }
+
+  .discography-row a {
+    font-size: 8px;
+  }
+
+  .discography-info {
+    font-size: 10px;
+    text-align: left;
+    float: left;
+    width: 150px;
   }
 
   iframe {
@@ -77,6 +92,10 @@ iframe {
 
   .discography-sub-header {
     font-size: 3vw;
+  }
+
+  .fullscreen {
+    font-size: 2rem;
   }
 
 

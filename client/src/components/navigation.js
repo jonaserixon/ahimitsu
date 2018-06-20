@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 import {Navbar, NavItem, NavDropdown, MenuItem, Nav} from 'react-bootstrap';
-import styled from 'styled-components';
-
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 class Navigation extends Component {
     constructor(props) {
@@ -18,7 +15,7 @@ class Navigation extends Component {
         if (window.innerWidth < 400) {
             this.setState({fixedTop: false});
             return;
-        } 
+        }
         this.setState({fixedTop: true});
     }
 

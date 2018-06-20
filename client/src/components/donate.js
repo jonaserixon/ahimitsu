@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav, Jumbotron, Button, PageHeader, Image, Panel, Grid, Row, Col} from 'react-bootstrap';
-import styled from 'styled-components';
+import {PageHeader, Image, Grid, Row, Col} from 'react-bootstrap';
 
 import paypal from '../icons/paypal.svg';
 import bandcamp from '../icons/bandcamp.svg';
