@@ -74,7 +74,6 @@ class Discography extends Component {
                         <Col xs={2}>
                             <div>
                             <a href="#"> <Glyphicon glyph="glyphicon glyphicon-credit-card" /> </a>
-
                                 <a className="discography-links" href={TrackList[i].buy}>
                                     Buy
                                 </a>
@@ -82,7 +81,7 @@ class Discography extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        
+                        <a href={"/tracks/" + TrackList[i].title}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" pullRight /></a>
                     </Row>
                     </Panel.Body>
                 </Panel>
@@ -108,8 +107,7 @@ class Discography extends Component {
                 <StyledPanelGroup accordion id="accordion-example">
                     {discography}
                 </StyledPanelGroup>
-                <br>
-                </br>
+                <br/>
             </div>
         );
     }

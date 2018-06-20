@@ -42,8 +42,7 @@ class Donate extends Component {
                         </a>
                     </Col>
                 </Row>
-                <br>
-                </br>
+                <br />
                 <Row>
                     <Col xs={12}>
                         <a href="https://ahimitsu.bandcamp.com">
@@ -52,8 +51,7 @@ class Donate extends Component {
                     </Col>
                 </Row>
             </Grid>
-            <br>
-            </br>
+            <br />
             </div>
         );
     }

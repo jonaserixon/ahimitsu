@@ -42,6 +42,19 @@ h1 {
   font-size: 13px;
 }
 
+iframe {
+  /* width: 350px;
+  height: 300px; */
+}
+
+.discography-sub-header {
+  font-size: 18px;
+}
+
+.discography-sub-header span {
+  margin-right: 5px;
+}
+
 @media (max-width: 768px) {
   html a { font-size: 12px; }
   .discography-links { display: none; }
@@ -50,6 +63,15 @@ h1 {
 @media screen and (max-width: 340px) {
   .discography-date {
     font-size: 12px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
+
+  .discography-sub-header {
+    font-size: 3vw;
   }
 
 
