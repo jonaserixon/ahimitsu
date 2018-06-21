@@ -29,8 +29,8 @@ class Discography extends Component {
 
         //Buy
         if (track.itunes != null) linksToRender.buy.push(<div><a href={track.itunes}>iTunes</a></div>);
-        if (track.google_play != null) linksToRender.buy.push(<div><a href={track.soundcloud}>Google Play</a></div>);
-        if (track.bandcamp != null) linksToRender.buy.push(<div><a href={track.youtube}>Bandcamp</a></div>);
+        if (track.google_play != null) linksToRender.buy.push(<div><a href={track.google_play}>Google Play</a></div>);
+        if (track.bandcamp != null) linksToRender.buy.push(<div><a href={track.bandcamp}>Bandcamp</a></div>);
         
         return linksToRender;
     }
