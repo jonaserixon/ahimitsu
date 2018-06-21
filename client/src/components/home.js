@@ -16,7 +16,7 @@ class Home extends Component {
                             <img width={1300} height={600} alt="1300x600" src={ahimitsu} />
                         </a>
                         <Carousel.Caption>
-                            <h1>A Himitsu</h1>
+                            <h3>A Himitsu</h3>
                             <p>Official website</p>
                         </Carousel.Caption>
                     </Carousel.Item>

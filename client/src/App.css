@@ -1,6 +1,3 @@
-.App {
-  /* text-align: center; */
-}
 
 ::selection { background:#ff42bd; color: black; }
 ::-moz-selection { background:#ff42bd; color: black;}
@@ -43,11 +40,6 @@ h1 {
 .discography-date {
   /* float: right; */
   font-size: 13px;
-}
-
-iframe {
-  /* width: 350px;
-  height: 300px; */
 }
 
 .discography-sub-header {

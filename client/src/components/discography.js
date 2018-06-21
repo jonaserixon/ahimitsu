@@ -15,9 +15,32 @@ class Discography extends Component {
         super(props);
     }
 
+    renderLinks(track) {
+        const linksToRender = {
+            stream: [],
+            buy: []
+        }
+
+        //Stream
+        if (track.itunes != null) linksToRender.stream.push(<div><a href={track.itunes}>Apple Music</a></div>);
+        if (track.soundcloud != null) linksToRender.stream.push(<div><a href={track.soundcloud}>SoundCloud</a></div>);
+        if (track.youtube != null) linksToRender.stream.push(<div><a href={track.youtube}>YouTube</a></div>);
+        if (track.spotify != null) linksToRender.stream.push(<div><a href={track.spotify}>Spotify</a></div>);
+
+        //Buy
+        if (track.itunes != null) linksToRender.buy.push(<div><a href={track.itunes}>iTunes</a></div>);
+        if (track.google_play != null) linksToRender.buy.push(<div><a href={track.soundcloud}>Google Play</a></div>);
+        if (track.bandcamp != null) linksToRender.buy.push(<div><a href={track.youtube}>Bandcamp</a></div>);
+        
+        return linksToRender;
+    }
+
     render() {
         let discography = [];
+        
         for (let i in TrackList) {
+            let links = this.renderLinks(TrackList[i]);
+
             discography.push(
             <Grid>
                 <Panel eventKey={i}>
@@ -43,12 +66,7 @@ class Discography extends Component {
                                     <Glyphicon glyph="glyphicon glyphicon-play" />
                                     Stream
                                 </h3>
-
-                                <div><a href={TrackList[i].soundcloud}>SoundCloud</a></div>
-                                <div><a href={TrackList[i].itunes}>Apple Music</a></div>
-                                <div><a href={TrackList[i].spotify}>Spotify</a></div>
-                                <div><a href={TrackList[i].youtube}>YouTube</a></div>
-                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
+                                {links.stream}
                             </div>
                         </Col>
 
@@ -59,9 +77,7 @@ class Discography extends Component {
                                     Download
                                 </h3>
 
-                                <div><a href={TrackList[i].google_drive}>Google Drive</a></div>
-                                <div><a href={TrackList[i].download}>Stereload</a></div>
-                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
+                                <div><a href={TrackList[i].download}>Free Download</a></div>
                             </div>
                         </Col>
 
@@ -71,10 +87,7 @@ class Discography extends Component {
                                     <Glyphicon glyph="glyphicon glyphicon-credit-card" />
                                     Buy
                                 </h3>
-
-                                <div><a href={TrackList[i].itunes}>iTunes</a></div>
-                                <div><a href={TrackList[i].bandcamp}>Bandcamp</a></div>
-                                <div><a href={TrackList[i].google_play}>Google Play</a></div>
+                                {links.buy}
                             </div>
                         </Col>
                     </div>

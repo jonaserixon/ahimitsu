@@ -262,6 +262,22 @@ let information = {
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209871375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
     17: {
+        title: 'Lucid Dream',
+        image: 'https://i1.sndcdn.com/artworks-000136889530-g2j7my-t500x500.jpg',
+        info: '',
+        released: 'May 10, 2015',
+        download: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
+        google_drive: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
+        soundcloud: 'https://soundcloud.com/skyfallaudio/a-himitsu-lucid-dream',
+        spotify: 'https://open.spotify.com/track/74tEOiX7TW7llKcp9ohQdL?si=IG9D0nluTqK9CWeLrO3cLg',
+        bandcamp: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
+        youtube: 'https://www.youtube.com/watch?v=Mf7rdM9ho7M',
+        itunes: 'https://itunes.apple.com/us/album/lucid-dream-single/id999823269',
+        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Lucid_Dream?id=Bpjpnvvrlcty5udlhzjowleutwi',
+        buy: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
+        sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196156603&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
+    },
+    18: {
         title: 'Cease',
         image: 'https://i1.sndcdn.com/artworks-000118475173-215a0t-t500x500.jpg',
         info: '',
@@ -277,7 +293,7 @@ let information = {
         buy: 'https://ahimitsu.bandcamp.com/track/cease',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201541435&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
-    18: {
+    19: {
         title: 'Lost Within',
         image: 'https://i1.sndcdn.com/artworks-000118475173-215a0t-t500x500.jpg',
         info: 'Hatsune Miku for the vocals',
@@ -293,7 +309,7 @@ let information = {
         buy: 'https://ahimitsu.bandcamp.com/track/lost-within',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/183615430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
-    19: {
+    20: {
         title: 'Icy Vindur',
         image: 'https://i1.sndcdn.com/artworks-000118475173-215a0t-t500x500.jpg',
         info: '',
@@ -309,7 +325,7 @@ let information = {
         buy: 'https://ahimitsu.bandcamp.com/track/icy-vindur',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/174998995&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
-    20: {
+    21: {
         title: 'Isolated Mind',
         image: 'https://i1.sndcdn.com/artworks-000118475173-215a0t-t500x500.jpg',
         info: '',
@@ -324,22 +340,6 @@ let information = {
         google_play: 'https://play.google.com/store/music/album?id=B3fjhhmzkisscfstou6rfnpujji&tid=song-Tftyy3vbchie5p6epvithnliu7q',
         buy: 'https://ahimitsu.bandcamp.com/track/isolated-mind',
         sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171369630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
-    },
-    21: {
-        title: 'Lucid Dream',
-        image: 'https://i1.sndcdn.com/artworks-000136889530-g2j7my-t500x500.jpg',
-        info: '',
-        released: 'May 10, 2015',
-        download: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
-        google_drive: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
-        soundcloud: 'https://soundcloud.com/skyfallaudio/a-himitsu-lucid-dream',
-        spotify: 'https://open.spotify.com/track/74tEOiX7TW7llKcp9ohQdL?si=IG9D0nluTqK9CWeLrO3cLg',
-        bandcamp: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
-        youtube: 'https://www.youtube.com/watch?v=Mf7rdM9ho7M',
-        itunes: 'https://itunes.apple.com/us/album/lucid-dream-single/id999823269',
-        google_play: 'https://play.google.com/store/music/album/A_Himitsu_Lucid_Dream?id=Bpjpnvvrlcty5udlhzjowleutwi',
-        buy: 'https://ahimitsu.bandcamp.com/track/lucid-dream',
-        sc_embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196156603&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
     },
     22: {
         title: 'Where Silence is Nonexistent',

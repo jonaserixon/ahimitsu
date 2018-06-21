@@ -11,6 +11,26 @@ class Track extends Component {
     componentDidMount() {
         // window.history.replaceState(null, null, window.location.pathname);
     }
+
+    renderLinks(track) {
+        const linksToRender = {
+            stream: [],
+            buy: []
+        }
+
+        //Stream
+        if (track.itunes != null) linksToRender.stream.push(<div><a href={track.itunes}>Apple Music</a></div>);
+        if (track.soundcloud != null) linksToRender.stream.push(<div><a href={track.soundcloud}>SoundCloud</a></div>);
+        if (track.youtube != null) linksToRender.stream.push(<div><a href={track.youtube}>YouTube</a></div>);
+        if (track.spotify != null) linksToRender.stream.push(<div><a href={track.spotify}>Spotify</a></div>);
+
+        //Buy
+        if (track.itunes != null) linksToRender.buy.push(<div><a href={track.itunes}>iTunes</a></div>);
+        if (track.google_play != null) linksToRender.buy.push(<div><a href={track.soundcloud}>Google Play</a></div>);
+        if (track.bandcamp != null) linksToRender.buy.push(<div><a href={track.youtube}>Bandcamp</a></div>);
+        
+        return linksToRender;
+    }
     
     render() {
         let track;
@@ -19,6 +39,7 @@ class Track extends Component {
         for (let key in TrackList) {
             if (TrackList[key].title === this.props.match.params.id) {
                 track = TrackList[key];
+
 
                 if (TrackList[key].lyrics) {
                     lyrics = 
@@ -34,6 +55,8 @@ class Track extends Component {
                 }
             }
         }
+
+        let links = this.renderLinks(track);
 
         return (
             <div className="Track">
@@ -65,11 +88,7 @@ class Track extends Component {
                                     Stream
                                 </h3>
 
-                                <div><a href={track.soundcloud}>SoundCloud</a></div>
-                                <div><a href={track.itunes}>Apple Music</a></div>
-                                <div><a href={track.spotify}>Spotify</a></div>
-                                <div><a href={track.youtube}>YouTube</a></div>
-                                <div><a href={track.bandcamp}>Bandcamp</a></div>
+                                {links.stream}
                             </div>
                         </Col>
                         <Col xs={3}>
@@ -78,9 +97,7 @@ class Track extends Component {
                                     <Glyphicon glyph="glyphicon glyphicon-download-alt" />
                                     Download
                                 </h3>
-                                <div><a href={track.google_drive}>Google Drive</a></div>
-                                <div><a href={track.download}>Stereload</a></div>
-                                <div><a href={track.bandcamp}>Bandcamp</a></div>
+                                <div><a href={track.download}>Free Download</a></div>
                             </div>
                         </Col>
                         <Col xs={3}>
@@ -89,8 +106,7 @@ class Track extends Component {
                                     <Glyphicon glyph="glyphicon glyphicon-credit-card" />
                                     Buy
                                 </h3>
-                                <div><a href={track.itunes}>iTunes</a></div>
-                                <div><a href={track.bandcamp}>Bandcamp</a></div>
+                                {links.buy}
                             </div>
                         </Col>
                         {lyrics}
