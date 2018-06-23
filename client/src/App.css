@@ -16,6 +16,7 @@
   position: relative;
   opacity: 1;
   transition: opacity 0.1s;
+
 }
 
 
@@ -45,6 +46,20 @@
 .track-page-header {
   color: ghostwhite;
   opacity: 0.8;
+}
+
+.track-footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.track-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.6;
+
 }
 
 .Track h1 {
@@ -113,8 +128,12 @@ h1 {
 
 .fullscreen {
   float: right; 
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
+}
+
+.lyrics {
+  white-space: pre-line;
 }
 
 @media (max-width: 768px) {

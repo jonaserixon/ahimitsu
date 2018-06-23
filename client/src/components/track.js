@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb, Button, Image, Modal} from 'react-bootstrap';
+import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb, Button, Image, Modal, Nav, NavItem, Navbar, MenuItem, NavDropdown} from 'react-bootstrap';
 import {information as TrackList} from './trackinformation';
 import styled from 'styled-components';
 
@@ -18,10 +18,12 @@ const StyledButton = styled(Button)`
 
 const StyledButtonCover = styled(Button)`
     border-radius: 20px
-    width: 100%
+    width: 150px
     margin-bottom: 10px
     text-align: center
 `;
+
+const widthIcon = '30px';
 
 class Track extends Component {
     constructor(props) {
@@ -31,7 +33,7 @@ class Track extends Component {
         this.handleClose = this.handleClose.bind(this);
     
         this.state = {
-          show: false
+          show: false,
         };
     }
 
@@ -45,24 +47,36 @@ class Track extends Component {
 
     componentDidMount() {
         // window.history.replaceState(null, null, window.location.pathname);
+        // document.title = 'A Himitsu - ' + this.state.title;
+    }
+
+    buildTrackButton(url, message, icon, buttonType) {
+        let trackButton = <div>
+            <a href={url}>
+                <StyledButton bsStyle={buttonType}>
+                    <Row>
+                        <Col xs={2}>
+                            <Image className={"track-icon"} width={widthIcon} src={icon} />
+                        </Col>
+                        <Col xs={10}>
+                            <p className="track-text">{message}</p>
+                        </Col>
+                    </Row>
+                </StyledButton>
+            </a>
+        </div>;
+
+        return trackButton;
     }
 
     renderLinks(track) {
-        const linksToRender = {
-            stream: [],
-            buy: []
-        }
+        const linksToRender = [];
 
-        //Stream
-        if (track.itunes != null) linksToRender.stream.push(<div><a href={track.itunes}>Apple Music</a></div>);
-        if (track.soundcloud != null) linksToRender.stream.push(<div><a href={track.soundcloud}>SoundCloud</a></div>);
-        if (track.youtube != null) linksToRender.stream.push(<div><a href={track.youtube}>YouTube</a></div>);
-        if (track.spotify != null) linksToRender.stream.push(<div><a href={track.spotify}>Spotify</a></div>);
-
-        //Buy
-        if (track.itunes != null) linksToRender.buy.push(<div><a href={track.itunes}>iTunes</a></div>);
-        if (track.google_play != null) linksToRender.buy.push(<div><a href={track.google_play}>Google Play</a></div>);
-        if (track.bandcamp != null) linksToRender.buy.push(<div><a href={track.bandcamp}>Bandcamp</a></div>);
+        if (track.itunes != null) linksToRender.push( this.buildTrackButton(track.itunes, 'Listen on Apple Music', apple, 'primary') )
+        if (track.spotify != null) linksToRender.push( this.buildTrackButton(track.spotify, 'Listen on Spotify', spotify, 'success') )
+        if (track.soundcloud != null) linksToRender.push( this.buildTrackButton(track.soundcloud, 'Listen on SoundCloud', soundcloud, 'warning') )
+        if (track.bandcamp != null) linksToRender.push( this.buildTrackButton(track.bandcamp, 'Support on Bandcamp', bandcamp, 'info') )
+        if (track.youtube != null) linksToRender.push( this.buildTrackButton(track.youtube, 'Listen on YouTube', youtube, 'danger') )
         
         return linksToRender;
     }
@@ -72,9 +86,8 @@ class Track extends Component {
         let lyrics;
 
         for (let key in TrackList) {
-            if (TrackList[key].title === this.props.match.params.id) {
+            if (TrackList[key].url === this.props.match.params.id) {
                 track = TrackList[key];
-
 
                 if (TrackList[key].lyrics) {
                     lyrics = 
@@ -88,26 +101,8 @@ class Track extends Component {
                                     <Modal.Title>{track.title} lyrics</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
-                                    <h4>
-                                        Text in a modal
-                                    </h4>
-
-                                    <p>
-                                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                                    </p>
-
-                                    <hr />
-
-                                    <h4>
-                                        Overflowing text to show scroll behavior
-                                    </h4>
-
-                                    <p>
-                                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                                        ac consectetur ac, vestibulum at eros.
-                                    </p>
-
+                                    <p><strong>Lyrics and vocals by {track.lyrics_author}</strong></p>
+                                    <p className="lyrics">{track.lyrics}</p>
                                 </Modal.Body>
                                 <Modal.Footer>
                                     <Button onClick={this.handleClose}>Close</Button>
@@ -150,71 +145,19 @@ class Track extends Component {
 
                             <p id="release-text" >Released on {track.released}</p>
                         </Col>
-                        <Col md={4}>
+                        <Col md={1}>
+                        </Col>
+                        <Col md={3}>
                             <h3 className="track-page-header">
                                 {/* <Glyphicon glyph="glyphicon glyphicon-play" /> */}
                                 <strong>{track.title}</strong> available on
                             </h3>
                             
-                            <div><StyledButton bsStyle="primary">
-                            <Row>
-                                <Col xs={2}>
-                                    <Image className={"track-icon"} width={"100%"} src={apple} />
-                                </Col>
-                                <Col xs={10}>
-                                    <p className="track-text">Listen on Apple Music</p>
-                                </Col>
-                            </Row>
+                            {links}
 
-                            </StyledButton></div>
-                            
-                            <div><StyledButton bsStyle="success">
-                                <Row>
-                                    <Col xs={2}>
-                                        <Image className={"track-icon"} width={"100%"} src={spotify} />
-                                    </Col>
-                                    <Col xs={10}>
-                                        <p className="track-text">Listen on Spotify</p>
-                                    </Col>
-                                </Row>
-                            </StyledButton></div>
-
-                            <div><StyledButton bsStyle="warning">
-                                <Row>
-                                    <Col xs={2}>
-                                        <Image className={"track-icon"} width={"100%"} src={soundcloud} />
-                                    </Col>
-                                    <Col xs={10}>
-                                        <p className="track-text">Listen on SoundCloud</p>
-                                    </Col>
-                                </Row>
-                            </StyledButton></div>
-
-                            <div><StyledButton bsStyle="info">
-                                <Row>
-                                    <Col xs={2}>
-                                        <Image className={"track-icon"} width={"100%"} src={bandcamp} />
-                                    </Col>
-                                    <Col xs={10}>
-                                        <p className="track-text">Support on Bandcamp</p>
-                                    </Col>
-                                </Row>
-                            </StyledButton></div>
-
-                            <div><StyledButton bsStyle="danger">
-                                <Row>
-                                    <Col xs={2}>
-                                        <Image className={"track-icon"} width={"100%"} src={youtube} />
-                                    </Col>
-                                    <Col xs={10}>
-                                        <p className="track-text">Listen on YouTube</p>
-                                    </Col>
-                                </Row>
-                            </StyledButton></div>
-
+                            {/* <br />
                             <br />
-                            <br />
-                            <br />
+                            <br /> */}
 
                         </Col>
                     </Row>
@@ -222,12 +165,20 @@ class Track extends Component {
                         <Col md={2}>
                         </Col>
                         <Col md={4}>
-                        <StyledButtonCover bsStyle="default">Free Download</StyledButtonCover>
-                        {lyrics}
+                            <a href={track.download}>
+                                <StyledButtonCover bsStyle="default">Free Download</StyledButtonCover>
+                            </a>
+
+                            {lyrics}
+
                         </Col>
                     </Row>
                     <Row>
-                        <p>Footer bar här, med länk till main webbsidan</p>
+                        <Col md={12}>
+                            <div className={"track-footer"}>
+                                <a href="/">A Himitsu Official Website</a>
+                            </div>
+                        </Col>
                     </Row>
                 </Grid>
             </div>

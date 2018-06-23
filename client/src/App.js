@@ -3,9 +3,7 @@ import './App.css';
 
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
-import Navigation from './components/navigation';
 import Track from './components/track';
-
 import Main from './container/main';
 
 class App extends Component {
@@ -13,12 +11,10 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    {/* <Navigation /> */}
-
                     <Switch>
-                        <Route path="/ahimitsu/tracks/:id" component={Track} />
+                        <Route path="/tracks/:id" component={Track} />
                         <div className="container">
-                            <Route path="/ahimitsu/*" component={Main} />
+                            <Route path="*" component={Main} />
                         </div>
                     </Switch>
                 </div>

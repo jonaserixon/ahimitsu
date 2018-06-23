@@ -97,7 +97,8 @@ class Discography extends Component {
                             <div className="discography-info">{TrackList[i].info}</div>
                         </Col>
                         <Col xs={10}>
-                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].title}>Track page<Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" /></a>
+
+                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].url}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" />Track Page</a>
                         </Col>
                     </Row>
                     </Panel.Body>
