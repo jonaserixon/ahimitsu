@@ -6,9 +6,70 @@
   margin-top: 5vw;
 }
 
+.Track {
+  /* background-color: black; */
+  background: linear-gradient(360deg, ghostwhite, black);
+  height: 100vh;
+}
+
+.overlay-wrapper {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+
+.overlay-wrapper span {
+  display: none;
+  position:absolute; 
+  top:150px; 
+  /* 120px på mobil */
+  right:0; 
+  left:0;  
+  z-index: 5; 
+  width:100%; 
+  text-align:center;
+  font-size: 70px;
+  color: ghostwhite;
+}
+
+.overlay-wrapper img:hover {
+  opacity: 0.7;
+}
+
+.overlay-wrapper img:hover + span {
+  display: block;
+  
+}
+
+.track-page-header {
+  color: ghostwhite;
+  opacity: 0.8;
+}
+
+.Track h1 {
+  color: ghostwhite;
+}
+
+.track-text {
+  text-align: left;
+}
+
+.track-icon {
+  float: left;
+  margin-right: 2vw;
+}
+
 .discography-track-cover {
   width: 270px;
   height: 270px;
+}
+
+#release-text {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 12px;
 }
 
 h1 {
@@ -30,7 +91,7 @@ h1 {
 }
 
 .Track {
-  margin-top: 5vw;
+  /* margin-top: 5vw; */
 }
 
 #yolo {
@@ -62,6 +123,12 @@ h1 {
 }
 
 @media screen and (max-width: 360px) {
+
+  .Track {
+    /* background-color: black; */
+    height: 100%;
+  }
+
   .discography-date {
     font-size: 12px;
   }

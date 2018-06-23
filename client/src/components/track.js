@@ -1,11 +1,46 @@
 import React, { Component } from 'react';
-import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb} from 'react-bootstrap';
-
+import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb, Button, Image, Modal} from 'react-bootstrap';
 import {information as TrackList} from './trackinformation';
+import styled from 'styled-components';
+
+import bandcamp from '../icons/bandcamp_logo.svg';
+import apple from '../icons/apple.svg';
+import soundcloud from '../icons/soundcloud.svg';
+import spotify from '../icons/spotify.svg';
+import youtube from '../icons/youtube.svg';
+
+const StyledButton = styled(Button)`
+  border-radius: 20px
+  width: 100%
+  margin-bottom: 10px
+  text-align: center
+`;
+
+const StyledButtonCover = styled(Button)`
+    border-radius: 20px
+    width: 100%
+    margin-bottom: 10px
+    text-align: center
+`;
 
 class Track extends Component {
     constructor(props) {
         super(props);
+
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+    
+        this.state = {
+          show: false
+        };
+    }
+
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+        this.setState({ show: true });
     }
 
     componentDidMount() {
@@ -43,15 +78,42 @@ class Track extends Component {
 
                 if (TrackList[key].lyrics) {
                     lyrics = 
-                    <Col xs={3}>
-                        <div>
-                            <h3 className="discography-sub-header">
-                            <Glyphicon glyph="glyphicon glyphicon-music" />
-                                Lyrics
-                            </h3>
-                            <div><a href={track.lyrics}>Lyrics document</a></div>
+                    <div>
+                        <StyledButtonCover bsStyle="default" onClick={this.handleShow}>
+                            Lyrics
+                        </StyledButtonCover>
+
+                            <Modal show={this.state.show} onHide={this.handleClose}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>{track.title} lyrics</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <h4>
+                                        Text in a modal
+                                    </h4>
+
+                                    <p>
+                                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                    </p>
+
+                                    <hr />
+
+                                    <h4>
+                                        Overflowing text to show scroll behavior
+                                    </h4>
+
+                                    <p>
+                                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+                                        ac consectetur ac, vestibulum at eros.
+                                    </p>
+
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button onClick={this.handleClose}>Close</Button>
+                                </Modal.Footer>
+                            </Modal>
                         </div>
-                    </Col>
                 }
             }
         }
@@ -61,69 +123,111 @@ class Track extends Component {
         return (
             <div className="Track">
                 <Grid>
-                    <Row>
-                        <Col xs={12}>
-                            <Breadcrumb>
-                                <Breadcrumb.Item href="/#home">A Himitsu</Breadcrumb.Item>
-                                <Breadcrumb.Item href="/#discography">Discography</Breadcrumb.Item>
-                                <Breadcrumb.Item active>{track.title}</Breadcrumb.Item>
-                            </Breadcrumb>
-                        </Col>
-                    </Row>
 
                     <Row>
                         <Col>
                             <a className="header-title" name={track.title}>
                             <PageHeader>
-                                {track.title}  
+                                {track.title}
+                                <br />
+                                <small>A Himitsu</small>
                             </PageHeader>
                             </a>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col xs={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-play" />
-                                    Stream
-                                </h3>
 
-                                {links.stream}
-                            </div>
+                    <Row>
+                        <Col md={2}>
+
                         </Col>
-                        <Col xs={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-download-alt" />
-                                    Download
-                                </h3>
-                                <div><a href={track.download}>Free Download</a></div>
+                        <Col md={4}>
+                            <div className="overlay-wrapper">
+                                <a href={"/#/tracks/" + track.title}>
+                                    <Image src={track.image} thumbnail />
+                                    <Glyphicon glyph={"glyphicon glyphicon-play-circle"} />
+                                </a>
                             </div>
+
+                            <p id="release-text" >Released on {track.released}</p>
                         </Col>
-                        <Col xs={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-credit-card" />
-                                    Buy
-                                </h3>
-                                {links.buy}
-                            </div>
+                        <Col md={4}>
+                            <h3 className="track-page-header">
+                                {/* <Glyphicon glyph="glyphicon glyphicon-play" /> */}
+                                <strong>{track.title}</strong> available on
+                            </h3>
+                            
+                            <div><StyledButton bsStyle="primary">
+                            <Row>
+                                <Col xs={2}>
+                                    <Image className={"track-icon"} width={"100%"} src={apple} />
+                                </Col>
+                                <Col xs={10}>
+                                    <p className="track-text">Listen on Apple Music</p>
+                                </Col>
+                            </Row>
+
+                            </StyledButton></div>
+                            
+                            <div><StyledButton bsStyle="success">
+                                <Row>
+                                    <Col xs={2}>
+                                        <Image className={"track-icon"} width={"100%"} src={spotify} />
+                                    </Col>
+                                    <Col xs={10}>
+                                        <p className="track-text">Listen on Spotify</p>
+                                    </Col>
+                                </Row>
+                            </StyledButton></div>
+
+                            <div><StyledButton bsStyle="warning">
+                                <Row>
+                                    <Col xs={2}>
+                                        <Image className={"track-icon"} width={"100%"} src={soundcloud} />
+                                    </Col>
+                                    <Col xs={10}>
+                                        <p className="track-text">Listen on SoundCloud</p>
+                                    </Col>
+                                </Row>
+                            </StyledButton></div>
+
+                            <div><StyledButton bsStyle="info">
+                                <Row>
+                                    <Col xs={2}>
+                                        <Image className={"track-icon"} width={"100%"} src={bandcamp} />
+                                    </Col>
+                                    <Col xs={10}>
+                                        <p className="track-text">Support on Bandcamp</p>
+                                    </Col>
+                                </Row>
+                            </StyledButton></div>
+
+                            <div><StyledButton bsStyle="danger">
+                                <Row>
+                                    <Col xs={2}>
+                                        <Image className={"track-icon"} width={"100%"} src={youtube} />
+                                    </Col>
+                                    <Col xs={10}>
+                                        <p className="track-text">Listen on YouTube</p>
+                                    </Col>
+                                </Row>
+                            </StyledButton></div>
+
+                            <br />
+                            <br />
+                            <br />
+
                         </Col>
+                    </Row>
+                    <Row>
+                        <Col md={2}>
+                        </Col>
+                        <Col md={4}>
+                        <StyledButtonCover bsStyle="default">Free Download</StyledButtonCover>
                         {lyrics}
-                    </Row>
-                    <br/>
-                    <Row>
-                        <Col xs={12}>
-                            <p>{track.info}</p>
                         </Col>
                     </Row>
-
                     <Row>
-                    {/* <Col md={6} mdOffset={4}> */}
-                        <Col xs={12}>
-                            {/* <Image width={"300px"} src={track.image} responsive rounded /> */}
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src={track.sc_embed.substring(0, track.sc_embed.length - 12)}></iframe>
-                        </Col>
+                        <p>Footer bar här, med länk till main webbsidan</p>
                     </Row>
                 </Grid>
             </div>

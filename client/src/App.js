@@ -5,7 +5,6 @@ import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 import Navigation from './components/navigation';
 import Track from './components/track';
-import Footer from './components/footer';
 
 import Main from './container/main';
 
@@ -14,16 +13,14 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <Navigation />
+                    {/* <Navigation /> */}
 
                     <Switch>
-                        <Route path="/tracks/:id" component={Track} />
+                        <Route path="/ahimitsu/tracks/:id" component={Track} />
                         <div className="container">
-                            <Route path="*" component={Main} />
+                            <Route path="/ahimitsu/*" component={Main} />
                         </div>
                     </Switch>
-
-                    <Footer />
                 </div>
             </Router>
         );
