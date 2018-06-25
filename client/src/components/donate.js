@@ -12,7 +12,7 @@ class Donate extends Component {
             
                 <Grid>
                     <Row>
-                        <Col>
+                        <Col md={12}>
                             <a className="header-title" name="donate">
                                 <PageHeader>
                                     Donate
@@ -26,7 +26,7 @@ class Donate extends Component {
                 <Grid>
             
                 <Row>
-                    <Col xs={12}>
+                    <Col md={12}>
                         <p>
                             If you want to support me more than just listening to my music
                              you could donate by using PayPal or buying my music in lossless 
@@ -35,7 +35,7 @@ class Donate extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12}>
+                    <Col md={12}>
                         <a href="https://www.paypal.me/ahimitsu">
                             <Image height={"30px"} src={paypal} />
                         </a>
@@ -43,7 +43,7 @@ class Donate extends Component {
                 </Row>
                 <br />
                 <Row>
-                    <Col xs={12}>
+                    <Col md={12}>
                         <a href="https://ahimitsu.bandcamp.com">
                             <Image height={"20px"} src={bandcamp} />
                         </a>

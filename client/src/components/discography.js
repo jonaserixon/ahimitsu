@@ -56,11 +56,11 @@ class Discography extends Component {
 
                     <Row>
                     <div className="discography-row">
-                        <Col xs={3}>
-                            <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded responsive />
+                        <Col md={3}>
+                            <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded />
                         </Col>
 
-                        <Col xs={3}>
+                        <Col md={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-play" />
@@ -70,7 +70,7 @@ class Discography extends Component {
                             </div>
                         </Col>
 
-                        <Col xs={3}>
+                        <Col md={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-download-alt" />
@@ -81,7 +81,7 @@ class Discography extends Component {
                             </div>
                         </Col>
 
-                        <Col xs={3}>
+                        <Col md={3}>
                             <div>
                                 <h3 className="discography-sub-header">
                                     <Glyphicon glyph="glyphicon glyphicon-credit-card" />
@@ -93,12 +93,13 @@ class Discography extends Component {
                     </div>
                     </Row>
                     <Row>
-                        <Col xs={2}>
+                        {/* <Col md={2}>
                             <div className="discography-info">{TrackList[i].info}</div>
-                        </Col>
-                        <Col xs={10}>
+                        </Col> */}
+                        <Col md={12}>
 
-                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].url}><Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" />Track Page</a>
+                            {/* <Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" /> */}
+                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].url}>Track Page</a>
                         </Col>
                     </Row>
                     </Panel.Body>

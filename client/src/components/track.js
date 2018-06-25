@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Glyphicon, PageHeader, Grid, Row, Col, Breadcrumb, Button, Image, Modal, Nav, NavItem, Navbar, MenuItem, NavDropdown} from 'react-bootstrap';
+import {Glyphicon, PageHeader, Grid, Row, Col, Button, Image, Modal} from 'react-bootstrap';
 import {information as TrackList} from './trackinformation';
 import styled from 'styled-components';
 
@@ -90,9 +90,10 @@ class Track extends Component {
                 track = TrackList[key];
 
                 if (TrackList[key].lyrics) {
-                    lyrics = 
+                    lyrics =
                     <div>
-                        <StyledButtonCover bsStyle="default" onClick={this.handleShow}>
+                        <StyledButtonCover bsStyle="primary" onClick={this.handleShow}>
+                        <Glyphicon id="download-icon" glyph="glyphicon glyphicon-music" />
                             Lyrics
                         </StyledButtonCover>
 
@@ -137,7 +138,7 @@ class Track extends Component {
                         </Col>
                         <Col md={4}>
                             <div className="overlay-wrapper">
-                                <a href={"/#/tracks/" + track.title}>
+                                <a href={"/#/tracks/" + track.url}>
                                     <Image src={track.image} thumbnail />
                                     <Glyphicon glyph={"glyphicon glyphicon-play-circle"} />
                                 </a>
@@ -155,9 +156,7 @@ class Track extends Component {
                             
                             {links}
 
-                            {/* <br />
                             <br />
-                            <br /> */}
 
                         </Col>
                     </Row>
@@ -166,10 +165,14 @@ class Track extends Component {
                         </Col>
                         <Col md={4}>
                             <a href={track.download}>
-                                <StyledButtonCover bsStyle="default">Free Download</StyledButtonCover>
+                                <StyledButtonCover bsStyle="primary">
+                                    <Glyphicon id="download-icon" glyph="glyphicon glyphicon-download-alt" />
+                                    Free Download
+                                </StyledButtonCover>
                             </a>
 
                             {lyrics}
+                            <br />
 
                         </Col>
                     </Row>

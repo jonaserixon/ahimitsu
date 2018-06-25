@@ -127,13 +127,17 @@ h1 {
 }
 
 .fullscreen {
-  float: right; 
+  /* float: right;  */
   font-size: 2rem;
   color: black;
 }
 
 .lyrics {
   white-space: pre-line;
+}
+
+#download-icon {
+  float: left;
 }
 
 @media (max-width: 768px) {
@@ -153,7 +157,7 @@ h1 {
   }
 
   .discography-row a {
-    font-size: 8px;
+    /* font-size: 8px; */
   }
 
   .discography-info {
@@ -164,7 +168,7 @@ h1 {
   }
 
   .discography-sub-header {
-    font-size: 3vw;
+    /* font-size: 3vw; */
   }
 
   .fullscreen {

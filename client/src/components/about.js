@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav, Jumbotron, Button, PageHeader, Image, Panel, Grid, Row, Col} from 'react-bootstrap';
+import {PageHeader, Image, Grid, Row, Col} from 'react-bootstrap';
 
 import studioSetup from '../pics/studio.JPG';
-import ahimitsu1 from '../pics/ahimitsu1.jpg';
 
 class About extends Component {
     render() {
@@ -12,7 +11,7 @@ class About extends Component {
             
                 <Grid>
                     <Row>
-                        <Col>
+                        <Col md={12}>
                             <a className="header-title" name="about">
                                 <PageHeader>
                                     About me  
@@ -25,10 +24,10 @@ class About extends Component {
                 <Grid>
             
                 <Row>
-                    <Col xs={6}>
+                    <Col md={6}>
                         <Image rounded width={"500px"} src={studioSetup} alt={"My bedroom studio"} responsive />
                     </Col>
-                    <Col xs={6}>
+                    <Col md={6}>
                         <p>
                             I first started writing music when I bought my first guitar back in 2011. 
                             But it was not until after I graduated high school in 2014 that I began producing my own music.
