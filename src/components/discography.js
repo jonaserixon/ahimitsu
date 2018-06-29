@@ -93,13 +93,9 @@ class Discography extends Component {
                     </div>
                     </Row>
                     <Row>
-                        {/* <Col md={2}>
-                            <div className="discography-info">{TrackList[i].info}</div>
-                        </Col> */}
                         <Col md={12}>
 
-                            {/* <Glyphicon title={"Fullscreen"} glyph="glyphicon glyphicon-fullscreen" /> */}
-                            <a className={"fullscreen"} href={"/#/tracks/" + TrackList[i].url}>Track Page</a>
+                            <a className={"fullscreen"} href={"/ahimitsu/#/tracks/" + TrackList[i].url}>Track Page</a>
                         </Col>
                     </Row>
                     </Panel.Body>
@@ -116,7 +112,6 @@ class Discography extends Component {
                             <a className="header-title" name="discography">
                             <PageHeader>
                                 Discography  
-                                {/* <small> Collection of previously released tracks with download and streaming links</small> */}
                             </PageHeader>
                             </a>
                         </Col>

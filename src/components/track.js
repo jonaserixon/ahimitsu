@@ -138,19 +138,18 @@ class Track extends Component {
                         </Col>
                         <Col md={4}>
                             <div className="overlay-wrapper">
-                                <a href={"/#/tracks/" + track.url}>
+                                <a href={"/ahimitsu/#/tracks/" + track.url}>
                                     <Image src={track.image} thumbnail />
                                     <Glyphicon glyph={"glyphicon glyphicon-play-circle"} />
                                 </a>
                             </div>
 
-                            <p id="release-text" >Released on {track.released}</p>
+                            <p id="release-text">Released on {track.released}</p>
                         </Col>
                         <Col md={1}>
                         </Col>
                         <Col md={3}>
                             <h3 className="track-page-header">
-                                {/* <Glyphicon glyph="glyphicon glyphicon-play" /> */}
                                 <strong>{track.title}</strong> available on
                             </h3>
                             
@@ -179,7 +178,7 @@ class Track extends Component {
                     <Row>
                         <Col md={12}>
                             <div className={"track-footer"}>
-                                <a href="/">A Himitsu Official Website</a>
+                                <a href="/ahimitsu">A Himitsu Official Website</a>
                             </div>
                         </Col>
                     </Row>

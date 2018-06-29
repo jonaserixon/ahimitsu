@@ -47,7 +47,6 @@ class Home extends Component {
                             <a className="header-title" name="home">
                                 <PageHeader>
                                     A Himitsu  
-                                    {/* <small> Official Website</small> */}
                                 </PageHeader>
                             </a>
                         </Col>

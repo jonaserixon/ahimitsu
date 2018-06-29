@@ -36,26 +36,7 @@ class About extends Component {
                             This later evolved into me finally downloading FL Studio 11 which turned out to be what is now A Himitsu.
                         </p>
                     </Col>
-                    
                 </Row>
-
-                <Row>
-                    {/* <Col xs={4}>
-                        <Image width={"280px"} src={ahimitsu1} rounded />
-                    </Col> */}
-                </Row>
-
-                {/* <Panel width={"400px"}>
-                    <Panel.Heading>
-                    <Panel.Title componentClass="h3">Music software that I use:</Panel.Title>
-                    </Panel.Heading>
-                    <Panel.Body>
-                        <ul>
-                            <li>FL Studio 11</li>
-                            <li>Kontakt</li>
-                        </ul>
-                    </Panel.Body>
-                </Panel> */}
             </Grid>
                 <br>
                 </br>

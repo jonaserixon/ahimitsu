@@ -25,17 +25,17 @@ class Navigation extends Component {
                 <Navbar fixedTop={this.state.fixedTop} >
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/#home">A Himitsu</a>
+                            <a href="/ahimitsu/#/home">A Himitsu</a>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav>
-                        <NavItem eventKey={1} href="/#discography">
+                        <NavItem eventKey={1} href="/ahimitsu/#discography">
                             Discography
                         </NavItem>
-                        <NavItem eventKey={1} href="/#about">
+                        <NavItem eventKey={1} href="/ahimitsu/#about">
                             About
                         </NavItem>
-                        <NavItem eventKey={2} href="/#contact">
+                        <NavItem eventKey={2} href="/ahimitsu/#contact">
                             Contact
                         </NavItem>
                         <NavDropdown eventKey={3} title="Social media" id="basic-nav-dropdown">
@@ -47,7 +47,7 @@ class Navigation extends Component {
                         </NavDropdown>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem eventKey={1} href="#donate">
+                        <NavItem eventKey={1} href="/ahimitsu/#donate">
                             Donate
                         </NavItem>
                     </Nav>

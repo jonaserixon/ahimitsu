@@ -12,7 +12,6 @@ class Contact extends Component {
                             <a className="header-title" name="contact">
                                 <PageHeader>
                                     Contact  
-                                    {/* <small> Regarding my music</small> */}
                                 </PageHeader>
                             </a>
                         </Col>
@@ -26,7 +25,6 @@ class Contact extends Component {
                     
                 </Row>
                 <Row>
-                    {/* <p>Or message me on any of my social media profiles</p> */}
                     <Col xs={12}>
                         <p>
                             If you have any question regarding my song Adventures you should contact the record label at cody@argofox.com
