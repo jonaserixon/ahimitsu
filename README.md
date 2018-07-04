@@ -23,5 +23,5 @@ _Figure 2 - Lyrics on https://jonaserixon.github.io/ahimitsu/#/tracks/in-love_
  - Full discography with relevant links etc.
 <img src="https://i.imgur.com/RWyZI0f.jpg" alt="Discography" width="800px"/>
 
-_Figure 3 - https://jonaserixon.github.io/ahimitsu/#/discography
+_Figure 3 - https://jonaserixon.github.io/ahimitsu/#/discography_
 

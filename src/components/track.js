@@ -8,6 +8,7 @@ import apple from '../icons/apple.svg';
 import soundcloud from '../icons/soundcloud.svg';
 import spotify from '../icons/spotify.svg';
 import youtube from '../icons/youtube.svg';
+import ccby from '../icons/ccby.svg';
 
 const StyledButton = styled(Button)`
   border-radius: 20px
@@ -150,11 +151,15 @@ class Track extends Component {
                         </Col>
                         <Col md={3}>
                             <h3 className="track-page-header">
-                                <strong>{track.title}</strong> available on
+                                Available on:
                             </h3>
                             
                             {links}
-
+                            <div>
+                                <p>
+                                    <strong>{track.title}</strong> is licensed under a   <a href="https://creativecommons.org/licenses/by/3.0/"><Image src={ccby} width={"15px"}/> Creative Commons license</a>
+                                </p>
+                            </div>
                             <br />
 
                         </Col>
@@ -175,6 +180,7 @@ class Track extends Component {
 
                         </Col>
                     </Row>
+                    
                     <Row>
                         <Col md={12}>
                             <div className={"track-footer"}>
