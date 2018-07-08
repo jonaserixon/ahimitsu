@@ -6,13 +6,8 @@ class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                <Navbar >
-                    <Nav>
-                        <NavItem>
-                            Website developed using ReactJS and Bootstrap by Jonas Erixon (<a href="https://github.com/jonaserixon">Github</a>)
-                        </NavItem>
-                    </Nav>
-                </Navbar>
+                <hr/>
+                <p>Website made by Jonas Erixon 2018 (<a href="https://github.com/jonaserixon">Github</a>)</p>
             </div>
         );
     }

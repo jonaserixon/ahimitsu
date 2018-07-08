@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {PageHeader, Image, Grid, Row, Col} from 'react-bootstrap';
+import {PageHeader, Image, Row, Col} from 'react-bootstrap';
 
 import studioSetup from '../pics/studio.JPG';
 
@@ -8,21 +8,15 @@ class About extends Component {
     render() {
         return (
             <div className="About">
-            
-                <Grid>
-                    <Row>
-                        <Col md={12}>
-                            <a className="header-title" name="about">
-                                <PageHeader>
-                                    About me  
-                                </PageHeader>
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>
-
-                <Grid>
-            
+                <Row>
+                    <Col md={12}>
+                        <a className="header-title" name="about">
+                            <PageHeader>
+                                About me  
+                            </PageHeader>
+                        </a>
+                    </Col>
+                </Row>
                 <Row>
                     <Col md={6}>
                         <Image rounded width={"500px"} src={studioSetup} alt={"My bedroom studio"} responsive />
@@ -37,9 +31,6 @@ class About extends Component {
                         </p>
                     </Col>
                 </Row>
-            </Grid>
-                <br>
-                </br>
             </div>
         );
     }

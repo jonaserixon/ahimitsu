@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Grid} from 'react-bootstrap';
 
 import Home from '../components/home';
 import Discography from '../components/discography';

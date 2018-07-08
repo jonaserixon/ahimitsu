@@ -17,6 +17,18 @@
   transition: opacity 0.1s;
 }
 
+.Footer {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body {
+  text-align: center;
+}
 
 .overlay-wrapper span {
   display: none;
@@ -120,6 +132,11 @@ h1 {
 .fullscreen {
   font-size: 2rem;
   color: black;
+}
+
+.fullscreen span {
+  font-size: 18px;
+  margin-right: 5px;
 }
 
 .lyrics {

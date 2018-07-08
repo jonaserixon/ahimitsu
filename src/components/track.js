@@ -120,7 +120,6 @@ class Track extends Component {
         return (
             <div className="Track">
                 <Grid>
-
                     <Row>
                         <Col>
                             <a className="header-title" name={track.title}>

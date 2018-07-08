@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 
-import {PageHeader, Grid, Row, Col} from 'react-bootstrap';
+import {PageHeader, Row, Col} from 'react-bootstrap';
 
 class Contact extends Component {
     render() {
         return (
             <div className="Contact">
-                <Grid>
-                    <Row>
-                        <Col>
-                            <a className="header-title" name="contact">
-                                <PageHeader>
-                                    Contact  
-                                </PageHeader>
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>
-            <Grid>
+                <Row>
+                    <Col>
+                        <a className="header-title" name="contact">
+                            <PageHeader>
+                                Contact  
+                            </PageHeader>
+                        </a>
+                    </Col>
+                </Row>
                 <Row>
                     <Col xs={12}>
                         <p><strong>x.jonaz@gmail.com</strong></p>
@@ -41,7 +38,6 @@ class Contact extends Component {
                         </p>
                     </Col>
                 </Row>
-            </Grid>
             </div>
         );
     }

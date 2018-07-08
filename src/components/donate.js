@@ -9,21 +9,15 @@ class Donate extends Component {
     render() {
         return (
             <div className="Donate">
-            
-                <Grid>
-                    <Row>
-                        <Col md={12}>
-                            <a className="header-title" name="donate">
-                                <PageHeader>
-                                    Donate / Support
-                                </PageHeader>
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>
-
-                <Grid>
-            
+                <Row>
+                    <Col md={12}>
+                        <a className="header-title" name="donate">
+                            <PageHeader>
+                                Donate / Support
+                            </PageHeader>
+                        </a>
+                    </Col>
+                </Row>
                 <Row>
                     <Col md={12}>
                         <p>
@@ -48,8 +42,6 @@ class Donate extends Component {
                         </a>
                     </Col>
                 </Row>
-            </Grid>
-            <br />
             </div>
         );
     }

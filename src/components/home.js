@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Grid, Row, Col, Carousel, PageHeader} from 'react-bootstrap';
+import {Grid, Row, Col, Carousel} from 'react-bootstrap';
 
 import ahimitsu from '../pics/ahimitsu.jpg';
 import twoplaces from '../pics/two.jpg';
@@ -39,32 +39,6 @@ class Home extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <br>
-                </br>
-                <Grid>
-                    <Row>
-                        <Col>
-                            <a className="header-title" name="home">
-                                <PageHeader>
-                                    A Himitsu  
-                                </PageHeader>
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>
-
-                <Grid>
-                    <Row>
-                        <Col xs={12}>
-                            <p>
-                                I made this website in order to collect all the various links for streaming, 
-                                downloading, buying and supporting in one place. It gets so spread out and 
-                                confusing when you need to navigate to every single social media in order to access everything.
-                            </p>
-                        </Col>
-                    </Row>
-                </Grid>
-                <br/>
             </div>
         );
     }

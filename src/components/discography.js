@@ -42,7 +42,6 @@ class Discography extends Component {
             let links = this.renderLinks(TrackList[i]);
 
             discography.push(
-            <Grid>
                 <Panel eventKey={i}>
                     <Panel.Heading>
                     <Panel.Title toggle>
@@ -55,73 +54,72 @@ class Discography extends Component {
                     <Panel.Body collapsible>
 
                     <Row>
-                    <div className="discography-row">
-                        <Col md={3}>
-                            <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded />
-                        </Col>
+                        <div className="discography-row">
+                            <Col md={3}>
+                                <Image width={"150px"} height={"150px"} src={TrackList[i].image} rounded />
+                            </Col>
 
-                        <Col md={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-play" />
-                                    Stream
-                                </h3>
-                                {links.stream}
-                            </div>
-                        </Col>
+                            <Col md={3}>
+                                <div>
+                                    <h3 className="discography-sub-header">
+                                        <Glyphicon glyph="glyphicon glyphicon-play" />
+                                        Stream
+                                    </h3>
+                                    {links.stream}
+                                </div>
+                            </Col>
 
-                        <Col md={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-download-alt" />
-                                    Download
-                                </h3>
+                            <Col md={3}>
+                                <div>
+                                    <h3 className="discography-sub-header">
+                                        <Glyphicon glyph="glyphicon glyphicon-download-alt" />
+                                        Download
+                                    </h3>
 
-                                <div><a href={TrackList[i].download}>Free Download</a></div>
-                            </div>
-                        </Col>
+                                    <div><a href={TrackList[i].download}>Free Download</a></div>
+                                </div>
+                            </Col>
 
-                        <Col md={3}>
-                            <div>
-                                <h3 className="discography-sub-header">
-                                    <Glyphicon glyph="glyphicon glyphicon-credit-card" />
-                                    Buy
-                                </h3>
-                                {links.buy}
-                            </div>
-                        </Col>
-                    </div>
+                            <Col md={3}>
+                                <div>
+                                    <h3 className="discography-sub-header">
+                                        <Glyphicon glyph="glyphicon glyphicon-credit-card" />
+                                        Buy
+                                    </h3>
+                                    {links.buy}
+                                </div>
+                            </Col>
+                        </div>
                     </Row>
                     <Row>
                         <Col md={12}>
 
-                            <a className={"fullscreen"} href={"/ahimitsu/#/tracks/" + TrackList[i].url}>Track Page</a>
+                            <a className={"fullscreen"} href={"/ahimitsu/#/tracks/" + TrackList[i].url}>
+                                <Glyphicon glyph="glyphicon glyphicon-new-window" />
+                                Track Page
+                            </a>
                         </Col>
                     </Row>
                     </Panel.Body>
                 </Panel>
-            </Grid>
             )
         }
 
         return (
             <div className="Discography">
-                <Grid>
-                    <Row>
-                        <Col>
-                            <a className="header-title" name="discography">
-                            <PageHeader>
-                                Discography  
-                            </PageHeader>
-                            </a>
-                        </Col>
-                    </Row>
-                </Grid>
+                <Row>
+                    <Col>
+                        <a className="header-title" name="discography">
+                        <PageHeader>
+                            Discography  
+                        </PageHeader>
+                        </a>
+                    </Col>
+                </Row>
 
                 <StyledPanelGroup accordion id="accordion-example">
                     {discography}
                 </StyledPanelGroup>
-                <br/>
             </div>
         );
     }

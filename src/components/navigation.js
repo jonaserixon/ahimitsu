@@ -22,7 +22,7 @@ class Navigation extends Component {
     render() {
         return (
             <div className="Navigation">
-                <Navbar fixedTop={this.state.fixedTop} >
+                <Navbar fixedTop={this.state.fixedTop} bsStyle="inverse">
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a href="/ahimitsu/#/home">A Himitsu</a>
