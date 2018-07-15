@@ -32,8 +32,8 @@ class Navigation extends Component {
                         <NavItem eventKey={1} href="/ahimitsu/#discography">
                             Discography
                         </NavItem>
-                        <NavItem eventKey={1} href="/ahimitsu/#about">
-                            About
+                        <NavItem eventKey={1} href="/ahimitsu/#usage">
+                            Using my music
                         </NavItem>
                         <NavItem eventKey={2} href="/ahimitsu/#contact">
                             Contact

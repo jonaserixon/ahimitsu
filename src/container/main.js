@@ -3,7 +3,7 @@ import {Grid} from 'react-bootstrap';
 
 import Home from '../components/home';
 import Discography from '../components/discography';
-import About from '../components/about';
+import Usage from '../components/usage';
 import Contact from '../components/contact';
 import Donate from '../components/donate';
 import Footer from '../components/footer';
@@ -16,7 +16,7 @@ class Container extends Component {
                 <Navigation />
                 <Home />
                 <Discography />
-                <About />
+                <Usage />
                 <Contact />
                 <Donate />
                 <Footer />

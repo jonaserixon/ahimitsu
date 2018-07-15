@@ -30,20 +30,31 @@ class Track extends Component {
     constructor(props) {
         super(props);
 
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.handleShowLyrics = this.handleShowLyrics.bind(this);
+        this.handleCloseLyrics = this.handleCloseLyrics.bind(this);
+        this.handleShowTerms = this.handleShowTerms.bind(this);
+        this.handleCloseTerms = this.handleCloseTerms.bind(this);
     
         this.state = {
-          show: false,
+          showLyrics: false,
+          showTerms: false,
         };
     }
 
-    handleClose() {
-        this.setState({ show: false });
+    handleCloseTerms() {
+        this.setState({ showTerms: false });
     }
 
-    handleShow() {
-        this.setState({ show: true });
+    handleShowTerms() {
+        this.setState({ showTerms: true });
+    }
+
+    handleCloseLyrics() {
+        this.setState({ showLyrics: false });
+    }
+
+    handleShowLyrics() {
+        this.setState({ showLyrics: true });
     }
 
     componentDidMount() {
@@ -73,12 +84,11 @@ class Track extends Component {
     renderLinks(track) {
         const linksToRender = [];
 
-        if (track.itunes != null) linksToRender.push( this.buildTrackButton(track.itunes, 'Listen on Apple Music', apple, 'primary') )
         if (track.spotify != null) linksToRender.push( this.buildTrackButton(track.spotify, 'Listen on Spotify', spotify, 'success') )
-        if (track.soundcloud != null) linksToRender.push( this.buildTrackButton(track.soundcloud, 'Listen on SoundCloud', soundcloud, 'warning') )
+        if (track.soundcloud != null) linksToRender.push( this.buildTrackButton(track.soundcloud, 'Stream on SoundCloud', soundcloud, 'warning') )
+        if (track.itunes != null) linksToRender.push( this.buildTrackButton(track.itunes, 'Listen on Apple Music', apple, 'primary') )
+        if (track.youtube != null) linksToRender.push( this.buildTrackButton(track.youtube, 'Watch on YouTube', youtube, 'danger') )
         if (track.bandcamp != null) linksToRender.push( this.buildTrackButton(track.bandcamp, 'Support on Bandcamp', bandcamp, 'info') )
-        if (track.youtube != null) linksToRender.push( this.buildTrackButton(track.youtube, 'Listen on YouTube', youtube, 'danger') )
-        
         return linksToRender;
     }
     
@@ -93,12 +103,12 @@ class Track extends Component {
                 if (TrackList[key].lyrics) {
                     lyrics =
                     <div>
-                        <StyledButtonCover bsStyle="primary" onClick={this.handleShow}>
+                        <StyledButtonCover bsStyle="default" onClick={this.handleShowLyrics}>
                         <Glyphicon id="download-icon" glyph="glyphicon glyphicon-music" />
                             Lyrics
                         </StyledButtonCover>
 
-                            <Modal show={this.state.show} onHide={this.handleClose}>
+                            <Modal show={this.state.showLyrics} onHide={this.handleCloseLyrics}>
                                 <Modal.Header closeButton>
                                     <Modal.Title>{track.title} lyrics</Modal.Title>
                                 </Modal.Header>
@@ -107,7 +117,7 @@ class Track extends Component {
                                     <p className="lyrics">{track.lyrics}</p>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                    <Button onClick={this.handleClose}>Close</Button>
+                                    <Button onClick={this.handleCloseLyrics}>Close</Button>
                                 </Modal.Footer>
                             </Modal>
                         </div>
@@ -123,7 +133,7 @@ class Track extends Component {
                     <Row>
                         <Col>
                             <a className="header-title" name={track.title}>
-                            <PageHeader>
+                            <PageHeader className="track-header">
                                 {track.title}
                                 <br />
                                 <small>A Himitsu</small>
@@ -154,12 +164,12 @@ class Track extends Component {
                             </h3>
                             
                             {links}
-                            <div>
+                            {/* <div>
                                 <p>
                                     <strong>{track.title}</strong> is licensed under a   <a href="https://creativecommons.org/licenses/by/3.0/"><Image src={ccby} width={"15px"}/> Creative Commons license</a>
                                 </p>
                             </div>
-                            <br />
+                            <br /> */}
 
                         </Col>
                     </Row>
@@ -168,15 +178,47 @@ class Track extends Component {
                         </Col>
                         <Col md={4}>
                             <a href={track.download}>
-                                <StyledButtonCover bsStyle="primary">
+                                <StyledButtonCover bsStyle="default">
                                     <Glyphicon id="download-icon" glyph="glyphicon glyphicon-download-alt" />
                                     Free Download
                                 </StyledButtonCover>
                             </a>
 
                             {lyrics}
-                            <br />
 
+                        </Col>
+                    </Row>
+                    <Row className="text-center">
+                        <Col md={12}>
+                        <StyledButtonCover bsStyle="primary" onClick={this.handleShowTerms}>
+                            <strong> Music terms of use </strong>
+                        </StyledButtonCover>
+
+                            <Modal show={this.state.showTerms} onHide={this.handleCloseTerms}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>A Himitsu music terms of use</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <p>All my music can be used in your videos on <strong>Youtube</strong>, <strong>Facebook</strong> and <strong>Instagram</strong>. You are even allowed to monetize your YouTube videos.</p>
+                                    <p><strong>
+                                        But to be able to use my music you need to agree with the terms below and follow the steps:
+                                    </strong>
+                                    </p>
+                                    <ul>
+                                        <li>You must give me credit when using my music (Example below)</li>
+                                        <li>You can not make claims that my music is yours</li>
+                                        <li>If you use my music outside YouTube, Facebook or Instagram you need to contact me in order to get a special permission or license</li>
+                                    </ul>
+                                    <br />
+                                    <h4>Credit example:</h4>
+                                    <p>Music by A Himitsu (https://www.youtube.com/channel/UCgFwu-j5-xNJml2FtTrrB3A)</p>
+                                    <p>Or</p>
+                                    <p>Music: A Himitsu + [Name of song] + [Link to any of my social medias]</p>
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button onClick={this.handleCloseTerms}>Close</Button>
+                                </Modal.Footer>
+                            </Modal>    
                         </Col>
                     </Row>
                     

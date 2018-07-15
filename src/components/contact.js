@@ -31,10 +31,6 @@ class Contact extends Component {
                 <Row>
                     <Col xs={12}>
                         <p>
-                            All of my music is released under the 
-                            <a href="https://creativecommons.org/licenses/by/3.0/"> CC-BY license</a>, 
-                            meaning that you are free to use it commercially IF you provide the necessary 
-                            credits such as: <strong>Artist name</strong>, <strong>Track title</strong>, <strong>Link to my social media</strong>.
                         </p>
                     </Col>
                 </Row>

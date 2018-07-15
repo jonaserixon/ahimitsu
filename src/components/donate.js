@@ -13,7 +13,7 @@ class Donate extends Component {
                     <Col md={12}>
                         <a className="header-title" name="donate">
                             <PageHeader>
-                                Donate / Support
+                                Donate
                             </PageHeader>
                         </a>
                     </Col>
