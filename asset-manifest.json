@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.33cd7499.css",
-  "main.css.map": "static/css/main.33cd7499.css.map",
-  "main.js": "static/js/main.5c58304b.js",
-  "main.js.map": "static/js/main.5c58304b.js.map",
+  "main.css": "static/css/main.de0292d5.css",
+  "main.css.map": "static/css/main.de0292d5.css.map",
+  "main.js": "static/js/main.4dee103d.js",
+  "main.js.map": "static/js/main.4dee103d.js.map",
   "static\\media\\ahimitsu.jpg": "static/media/ahimitsu.45bdb2b3.jpg",
   "static\\media\\apple.svg": "static/media/apple.883cdf2e.svg",
   "static\\media\\bandcamp.svg": "static/media/bandcamp.78a38da1.svg",
@@ -12,7 +12,6 @@
   "static\\media\\paypal.svg": "static/media/paypal.fa90774c.svg",
   "static\\media\\soundcloud.svg": "static/media/soundcloud.0ea85e45.svg",
   "static\\media\\spotify.svg": "static/media/spotify.16275e9e.svg",
-  "static\\media\\studio.JPG": "static/media/studio.7a908ee8.JPG",
   "static\\media\\two.jpg": "static/media/two.04d72c34.jpg",
   "static\\media\\youtube.svg": "static/media/youtube.a129f7df.svg"
 }
