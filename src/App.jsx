@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
-import Track from './components/track';
-import Main from './container/main';
+import Main from './components/Main';
+import TrackPage from './components/TrackPage';
 
 class App extends Component {
     render() {
@@ -12,7 +11,7 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Switch>
-                        <Route path="/tracks/:id" component={Track} />
+                        <Route path="/tracks/:id" component={TrackPage} />
                         <div className="container">
                             <Route path="*" component={Main} />
                         </div>

@@ -1,25 +1,73 @@
-
 ::selection { background:#ff42bd; color: black; }
 ::-moz-selection { background:#ff42bd; color: black;}
-
-.Home {
-  margin-top: 5vw;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.App {
+  text-align: center;
 }
 
-.Track {
-  background: linear-gradient(360deg, ghostwhite, black);
-  height: 100vh;
+body {
+  margin: 0;
+}
+
+.Discography {
+  background: linear-gradient(360deg, black, ghostwhite);
+}
+
+.TrackPage {
+  background: linear-gradient(360deg, black, ghostwhite);
+  height: 100%;
+}
+
+#track-page-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Oswald', sans-serif;
+  /* font-size: 4vw; */
+}
+
+#track-page-subheader {
+  margin-top: 0px;
+  font-family: 'Oswald', sans-serif;
+  opacity: 0.6;
+  /* font-size: 2vw; */
+}
+
+#link-button {
+  font-weight: bold;
+  color: ghostwhite;
+  width: 270px;
+  text-align: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+#link-button:hover {
+  opacity: 0.8;
+}
+
+#footerDiv {
+  color: white;
+  padding-bottom: 30vh;
+}
+
+#footerDiv p {
+  font-family: 'Oswald', sans-serif;
+}
+
+#footerDiv a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+#footerDiv a:hover {
+  opacity: 0.6;
 }
 
 .overlay-wrapper {
   position: relative;
   opacity: 1;
   transition: opacity 0.1s;
-}
-
-.Footer {
-  text-align: center;
-  opacity: 0.8;
 }
 
 .modal-title {
@@ -99,9 +147,6 @@
   font-size: 12px;
 }
 
-h1 {
-  /* text-align: center; */
-}
 
 #discography-glyphicon {
   float: left;
@@ -133,47 +178,10 @@ h1 {
   margin-right: 5px;
 }
 
-.fullscreen {
-  font-size: 2rem;
-  color: black;
-}
-
-.fullscreen span {
-  font-size: 18px;
-  margin-right: 5px;
-}
-
 .lyrics {
   white-space: pre-line;
 }
 
 #download-icon {
   float: left;
-}
-
-@media (max-width: 768px) {
-  html a { font-size: 12px; }
-  .discography-links { display: none; }
-}
-
-@media screen and (max-width: 360px) {
-
-  .Track {
-    height: 100%;
-  }
-
-  .discography-date {
-    font-size: 12px;
-  }
-
-  .discography-info {
-    font-size: 10px;
-    text-align: left;
-    float: left;
-    width: 150px;
-  }
-
-  .fullscreen {
-    font-size: 2rem;
-  }
 }
